@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
+import HomePage from "./components/main pages/home page/HomePage"
+
 const App = () => {
   return (
     <BrowserRouter>
