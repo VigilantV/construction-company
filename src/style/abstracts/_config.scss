@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Lexend";
+  src: local("Lexend"),
+    url(../../font/Lexend-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: lexend;
+}
