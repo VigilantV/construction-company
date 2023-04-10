@@ -3,6 +3,8 @@ import menuItems from "../../data information/menuItems";
 
 import mainLogo from "../../images/navbar/main_logo.svg";
 
+import "../../styles/common/navbar.scss";
+
 const Navbar_Desktop = () => {
   // function scrollToContact() {
   //   var Scroll = require("react-scroll");
