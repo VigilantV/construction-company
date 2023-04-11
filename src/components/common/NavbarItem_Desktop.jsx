@@ -3,8 +3,18 @@ import { useNavigate } from "react-router-dom";
 
 import NavbarDropdown_Desktop from "./NavbarDropdown_Desktop";
 
-const NavbarItem_Desktop = ({ item, depthLevel }) => {
+import classes from "../../styles/common/navbar.module.scss";
+
+const NavbarItem_Desktop = ({ item, depthLevel, parentIsOpen = null }) => {
   const navigate = useNavigate();
+  const clickPermission = depthLevel === 0 || parentIsOpen;
+
+  const [cursor, setCursor] = useState("default");
+
+  useEffect(() => {
+    if (clickPermission) setCursor("pointer");
+    else setCursor("default");
+  }, [clickPermission]);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,28 +28,38 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
     };
     document.addEventListener("mousedown", closeHandler);
     return () => {
-      // Cleanup the event listener
       document.removeEventListener("mousedown", closeHandler);
     };
   }, [isOpen]);
 
-  const innerMenuClass = depthLevel > 0 ? "navbar_inner_menus_title" : "";
+  const innerMenuClass = depthLevel > 0 ? classes.inner_menus_title : "";
 
   return (
-    <li className="navbar_item" ref={ref}>
+    <li className={classes.navbar_item} ref={ref}>
       {item.subMenu ? (
         <Fragment>
           <div
-            className={`navbar_title ${innerMenuClass}`}
-            onClick={() => setIsOpen((prevValue) => !prevValue)}
+            style={{ cursor }}
+            className={`${classes.navbar_title} ${innerMenuClass}`}
+            onClick={() => {
+              if (clickPermission) setIsOpen((prevValue) => !prevValue);
+            }}
           >
             <p>{item.title}</p>
             {depthLevel === 0 ? (
-              <p className={`navbar_arrow_${isOpen ? "open" : "close"}`}>
+              <p
+                className={`${
+                  isOpen ? classes.arrow_open : classes.arrow_close
+                }`}
+              >
                 &#11167;
               </p>
             ) : (
-              <p className={`navbar_arrow_${isOpen ? "open" : "close"}`}>
+              <p
+                className={`${
+                  isOpen ? classes.arrow_open : classes.arrow_close
+                }`}
+              >
                 &#11166;
               </p>
             )}
@@ -52,9 +72,10 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
         </Fragment>
       ) : (
         <div
-          className={`navbar_title ${innerMenuClass}`}
+          style={{ cursor }}
+          className={`${classes.navbar_title} ${innerMenuClass}`}
           onClick={() => {
-            navigate(item.link);
+            if (clickPermission) navigate(item.link);
           }}
         >
           {item.title}
@@ -65,25 +86,3 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
 };
 
 export default NavbarItem_Desktop;
-{
-  /* {isCollapsible ? (
-        <div>
-          <div className="navbar_title" onClick={() => setIsOpen(!isOpen)}>
-            <p>{title}</p>
-            <p className={`navbar_arrow_${isOpen ? "open" : "close"}`}>&#11167;</p>
-          </div>
-          <div className={`navbar_collapsible_content`} style={{ height }}>
-            <div ref={ref}>{children}</div>
-          </div>
-        </div>
-      ) : (
-        <div
-          className="navbar_title"
-          onClick={() => {
-            navigate(link);
-          }}
-        >
-          {title}
-        </div>
-      )} */
-}

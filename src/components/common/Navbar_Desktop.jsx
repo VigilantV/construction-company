@@ -3,7 +3,7 @@ import menuItems from "../../data information/menuItems";
 
 import mainLogo from "../../images/navbar/main_logo.svg";
 
-import "../../styles/common/navbar.scss";
+import classes from "../../styles/common/navbar.module.scss";
 
 const Navbar_Desktop = () => {
   // function scrollToContact() {
@@ -14,9 +14,9 @@ const Navbar_Desktop = () => {
   // }
 
   return (
-    <nav className="navbar">
-      <img className="navbar_img" src={mainLogo} alt="main-logo" />
-      <ul className="navbar_items">
+    <nav className={classes.navbar}>
+      <img className={classes.navbar_img} src={mainLogo} alt="main-logo" />
+      <ul className={classes.navbar_items}>
         {menuItems.map((item, index) => {
           const depthLevel = 0;
           return (
