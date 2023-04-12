@@ -1,0 +1,44 @@
+@use "../global/variables" as *;
+@use "../global//mixins" as *;
+
+.header {
+  height: 100vh;
+  background-image: url("../../images/header/main_header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_text {
+    position: absolute;
+    top: 40vh;
+    left: 4vw;
+    z-index: 10;
+    color: $smokyWhite;
+  }
+}
+
+.first_title {
+  font-size: 3.7vw;
+}
+
+.second_title {
+  font-size: 2.7vw;
+  margin: 1vh 0 5vh;
+}
+
+.address {
+  font-size: 1.2vw;
+  margin-bottom: 2vh;
+}
+
+.links a {
+  margin-bottom: 2vh;
+  @include linearHover($smokyWhite, $lightRed);
+}
+
+.diagonal_shadow {
+  position: absolute;
+  top: 10vh;
+  width: 43.5vw;
+  border-bottom: 90vh solid #000000c0;
+  border-right: 10.5vw solid transparent;
+}

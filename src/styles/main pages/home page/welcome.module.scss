@@ -1,0 +1,50 @@
+@use "../../global/variables.scss" as *;
+
+.welcome {
+  padding: 2vw 10vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 6vh 0 5vh;
+  color: $smokyWhite;
+}
+
+.introductions {
+  display: flex;
+  justify-content: "center";
+  gap: 2vw;
+}
+
+.intro {
+  background-color: $gray;
+  padding: 2vw;
+  border-radius: 0.7vw;
+  height: 68vh;
+
+  &_border {
+    background: linear-gradient(to right, $lightRed, $lightGray, $smokyWhite);
+    border-radius: 0.7vw;
+    padding: 0.3vw;
+  }
+
+  &_title {
+    color: $lightRed;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6vw;
+  }
+
+  &_content {
+    font-size: 1.1vw;
+    line-height: 4.5vh;
+    margin-top: 2vw;
+    color: $smokyWhite;
+
+    li {
+      margin-left: 2vw;
+    }
+  }
+}
