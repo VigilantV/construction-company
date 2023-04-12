@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ServicesDescription from "./ServicesDescription";
 import services from "../../../data information/services";
 
-import "../../../styles/main pages/home page/services.scss";
+import classes from "../../../styles/main pages/home page/services.module.scss";
 
 const Services_Desktop = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,17 +30,16 @@ const Services_Desktop = () => {
   };
 
   return (
-    <div className="services">
-      <h2 className="services_title">OUR SERVICES</h2>
-      <div className="services_container">
+    <div className={classes.services}>
+      <h2 className={classes.services_title}>OUR SERVICES</h2>
+      <div className={classes.services_container}>
         <div>{renderServices()}</div>
 
-          <img
-            className="service_image"
-            src={services[activeIndex].image}
-            alt={services[activeIndex].title}
-          />
-
+        <img
+          className={classes.service_image}
+          src={services[activeIndex].image}
+          alt={services[activeIndex].title}
+        />
       </div>
     </div>
   );

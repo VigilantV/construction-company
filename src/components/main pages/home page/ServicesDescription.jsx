@@ -1,5 +1,7 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
+import classes from "../../../styles/main pages/home page/services.module.scss";
 
 const ServicesDescription = ({
   title,
@@ -18,13 +20,17 @@ const ServicesDescription = ({
 
   return (
     <div onClick={onChangeIndex}>
-      <h2 className={`service_title +  ${isActive ? "active_title" : ""}`}>
+      <h2
+        className={`${classes.service_title} +  ${
+          isActive ? classes.active_title : ""
+        }`}
+      >
         {title}
       </h2>
-      <div className="detail_container" style={{ height }}>
-        <div className={`${isActive ? "active_detail" : ""}`}>
-          <p className="short_content">{shortContent}</p>
-          <Link to={link} className="link">
+      <div style={{ height }} className={classes.detail_container}>
+        <div className={isActive ? classes.active_detail : ""}>
+          <p className={classes.short_content}>{shortContent}</p>
+          <Link to={link} className={classes.link}>
             learn more
           </Link>
         </div>
