@@ -1,0 +1,26 @@
+@use "../global/variables" as *;
+
+@mixin linearHover(
+  $firstColor: #fff,
+  $secondColor: #ff0000,
+  $display: "inline-block"
+) {
+  display: $display;
+  background-size: 200% 100%;
+  background-position: 100%;
+  background-clip: text;
+  text-decoration: none;
+  color: $firstColor;
+  background-image: linear-gradient(
+    to right,
+    $secondColor,
+    $secondColor 50%,
+    $firstColor 50%
+  );
+  transition: background-position 0.3s ease-in-out;
+
+  &:hover {
+    -webkit-text-fill-color: transparent;
+    background-position: 0;
+  }
+}

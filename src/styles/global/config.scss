@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 @font-face {
   font-family: "Lexend";
   src: local("Lexend"),
@@ -12,5 +14,5 @@
 }
 
 body {
-  background-color: #252525;
+  background-color: $darkGray;
 }
