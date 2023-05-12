@@ -9,7 +9,7 @@
 
   &_text {
     position: absolute;
-    top: 40vh;
+    top: 18vw;
     left: 4vw;
     z-index: 10;
     color: $smokyWhite;
@@ -22,23 +22,23 @@
 
 .second_title {
   font-size: 2.7vw;
-  margin: 1vh 0 5vh;
+  margin: 0.6vw 0 2.4vw;
 }
 
 .address {
   font-size: 1.2vw;
-  margin-bottom: 2vh;
+  margin-bottom: 1vw;
 }
 
-.links a {
-  margin-bottom: 2vh;
+.links p {
+  padding-bottom: 0.4vw;
   @include linearHover($smokyWhite, $lightRed);
 }
 
 .diagonal_shadow {
   position: absolute;
-  top: 10vh;
+  top: 4.8vw;
   width: 43.5vw;
-  border-bottom: 90vh solid #000000c0;
+  border-bottom: calc(100vh - 4.8vw) solid #000000c0;
   border-right: 10.5vw solid transparent;
 }

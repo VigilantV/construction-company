@@ -15,9 +15,8 @@ const Header = () => {
         </p>
         <p className={classes.address}> P.O. Box: 1234567891 </p>
         <div className={classes.links}>
-          <a href=""> (+98) 21 12345678 </a>
-          <br />
-          <a href=""> example@gmail.com </a>
+          <p> (+98) 21 12345678 </p>
+          <p> example@gmail.com </p>
         </div>
       </div>
       <div className={classes.diagonal_shadow}></div>
