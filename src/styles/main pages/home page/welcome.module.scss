@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 2vw;
   font-weight: bold;
-  margin: 6vh 0 5vh;
+  margin: 4vw 0 2vw;
   color: $smokyWhite;
 }
 
@@ -22,7 +22,7 @@
   background-color: $gray;
   padding: 2vw;
   border-radius: 0.7vw;
-  height: 68vh;
+  height: 33vw;
 
   &_border {
     background: linear-gradient(to right, $lightRed, $lightGray, $smokyWhite);
@@ -39,7 +39,7 @@
 
   &_content {
     font-size: 1.1vw;
-    line-height: 4.5vh;
+    line-height: 2.1vw;
     margin-top: 2vw;
     color: $smokyWhite;
 
