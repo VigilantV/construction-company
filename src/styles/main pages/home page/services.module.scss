@@ -2,15 +2,17 @@
 @use "../../global/mixins" as *;
 
 .services {
+  display: flex;
+  flex-direction: column;
   margin: 0 10vw;
   color: $smokyWhite;
 
   &_title {
+    margin: 4vw 0 2vw;
     text-align: center;
     color: white;
     font-size: 1.7vw;
     font-weight: bold;
-    margin: 4vw 0 2vw;
   }
 
   &_container {
@@ -41,8 +43,16 @@
 }
 
 .detail_container {
-  overflow: hidden;
+  overflow-y: scroll;
   transition: height 0.4s;
+
+  &::-webkit-scrollbar {
+    width: 0.2vw;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $gray;
+  }
 }
 
 .active_detail {

@@ -5,7 +5,6 @@ const Card = ({ imgSrc, title, content, onClick }) => {
   return (
     <div className={classes.card_wrapper} onClick={onClick}>
       <img className={classes.image} src={imgSrc} alt={title} />
-
       <div className={classes.lower_of_card}>
         <h1 className={classes.title}>{title}</h1>
         <img className={classes.arrow_icon} src={ArrowIcon} alt="" />

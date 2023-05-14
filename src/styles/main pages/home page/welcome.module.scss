@@ -23,6 +23,11 @@
   padding: 2vw;
   border-radius: 0.7vw;
   height: 33vw;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 
   &_border {
     background: linear-gradient(to right, $lightRed, $lightGray, $smokyWhite);

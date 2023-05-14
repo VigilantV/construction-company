@@ -16,3 +16,11 @@
 body {
   background-color: $darkGray;
 }
+
+::-webkit-scrollbar-track {
+  background: $darkGray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $lightRed;
+}
