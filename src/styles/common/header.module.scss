@@ -31,6 +31,7 @@
 }
 
 .links p {
+  display: inline-block;
   padding-bottom: 0.4vw;
   @include linearHover($smokyWhite, $lightRed);
 }

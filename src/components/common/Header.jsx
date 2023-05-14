@@ -16,6 +16,7 @@ const Header = () => {
         <p className={classes.address}> P.O. Box: 1234567891 </p>
         <div className={classes.links}>
           <p> (+98) 21 12345678 </p>
+          <br />
           <p> example@gmail.com </p>
         </div>
       </div>

@@ -76,7 +76,7 @@ const NavbarItem_Desktop = ({ item, depthLevel, parentIsOpen = null }) => {
           className={`${classes.navbar_title} ${innerMenuClass} ${
             depthLevel > 0
               ? classes.navbar_inner_link_title
-              : classes.navbar_top_title
+              : classes.navbar_title_shadow
           }`}
           onClick={() => {
             if (clickPermission) navigate(item.link);
