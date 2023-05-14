@@ -1,5 +1,29 @@
+import classes from "../../../styles/main pages/home page/customers.module.scss";
+import Danish from "../../../images/home page/customers/danish.svg";
+import Embassy from "../../../images/home page/customers/embassy.svg";
+import Fine from "../../../images/home page/customers/fine.svg";
+import Mammut from "../../../images/home page/customers/mammut.svg";
+import Nuqul from "../../../images/home page/customers/nuqul.svg";
+import Unilever from "../../../images/home page/customers/unilever.svg";
+
 const Customers = () => {
-  return <div></div>;
+  const logos = [Danish, Embassy, Fine, Mammut, Nuqul, Unilever];
+
+  return (
+    <div className={classes.customers}>
+      <h2 className={classes.title}>OUR CUSTOMERS</h2>
+      <div className={classes.list}>
+        {logos.map((logo, index) => (
+          <img
+            key={index}
+            className={classes.logo}
+            src={logo}
+            alt={"logo_" + index}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Customers;
