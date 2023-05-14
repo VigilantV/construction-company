@@ -1,0 +1,51 @@
+@use "../../global/variables.scss" as *;
+
+.projects {
+  margin: 0 10vw;
+  color: $smokyWhite;
+
+  &_title {
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin: 4vw 0 2vw;
+  }
+}
+
+.card_wrapper {
+  position: relative;
+  height: 21vw;
+  margin: 2vw 1vw;
+  background-color: $lightRed;
+  border-radius: 0.7vw;
+}
+
+.image {
+  width: 100%;
+  border-top-left-radius: 0.7vw;
+  border-top-right-radius: 0.7vw;
+}
+
+.lower_of_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.2vw;
+  padding: 0.5vw 2.5vw 0.3vw 0.5vw;
+}
+
+.arrow_icon {
+  position: absolute;
+  right: 0.3vw;
+  top: 9.7vw;
+  width: 2.6vw;
+  cursor: pointer;
+}
+
+.content {
+  font-size: 1.1vw;
+  padding: 0 0.5vw;
+}
