@@ -1,4 +1,4 @@
-import { Fragment, useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import NavbarDropdown_Desktop from "./NavbarDropdown_Desktop";
@@ -37,7 +37,7 @@ const NavbarItem_Desktop = ({ item, depthLevel, parentIsOpen = null }) => {
   return (
     <li className={classes.navbar_item} ref={ref}>
       {item.subMenu ? (
-        <Fragment>
+        <>
           <div
             style={{ cursor }}
             className={`${classes.navbar_title} ${innerMenuClass}`}
@@ -69,7 +69,7 @@ const NavbarItem_Desktop = ({ item, depthLevel, parentIsOpen = null }) => {
             isOpen={isOpen}
             depthLevel={depthLevel}
           />
-        </Fragment>
+        </>
       ) : (
         <div
           style={{ cursor }}

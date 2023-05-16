@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 const directorProjects = [
   {
     id: 0,
@@ -101,7 +99,7 @@ const directorProjects = [
     title: "Pharmaceutical Production & Clean Rooms",
     link: "pharmaceutical_production_and_clean_rooms",
     text: (
-      <Fragment>
+      <>
         <p> Iranian Blood Research & Fractionation Company (Tehran-Iran) </p>
         <ul
           style={{
@@ -231,7 +229,7 @@ const directorProjects = [
         >
           <li> LPC/WFI/PW Loops Design & Calculation - Project </li>
         </ul>
-      </Fragment>
+      </>
     ),
   },
   {

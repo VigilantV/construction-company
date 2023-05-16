@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 import Procurement from "../images/home page/services/0.svg";
 import Construction from "../images/home page/services/1.svg";
 import DesignAndEngineering from "../images/home page/services/2.svg";
@@ -58,7 +56,7 @@ const services = [
     shortContent:
       "This section is one of the subdivisions of technical office and highly experienced civil, architectural, structural, electrical...",
     text: (
-      <Fragment>
+      <>
         <p>
           This section is one of the subdivisions of technical office and highly
           experienced civil, architectural, structural, electrical, and
@@ -140,7 +138,7 @@ const services = [
           Design (PHASE 2), novak Co. has provided two flow Diagram that
           describes the activity procedure.
         </p>
-      </Fragment>
+      </>
     ),
   },
   {

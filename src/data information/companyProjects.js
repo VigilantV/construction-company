@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 import UnileverProject from "../images/home page/projects/0.png";
 import SarveCaspianProject from "../images/home page/projects/1.png";
 import NetherlandsEmbassy from "../images/home page/projects/2.png";
@@ -18,7 +16,7 @@ const companyProjects = [
     shortContent:
       "Procurement of material, equipment, implementation, erection, test and commissioning of Electrical...",
     text: (
-      <Fragment>
+      <>
         <p>
           Procurement of material, equipment, implementation, erection, test and
           commissioning of Electrical and Mechanical works, instrumentation and
@@ -101,7 +99,7 @@ const companyProjects = [
           <li> C-2. 20KV Substation Room </li>
           <li> C-3. External Piping & Cabling Works </li>
         </ul>
-      </Fragment>
+      </>
     ),
   },
   {
@@ -112,7 +110,7 @@ const companyProjects = [
     shortContent:
       "Sarve Caspian project was performed under an EPC Contract with foreign investment of Nuqul Group...",
     text: (
-      <Fragment>
+      <>
         <p>
           Sarve Caspian project was performed under an EPC Contract with foreign
           investment of Nuqul Group in an area of 30,000 m2 land located in
@@ -140,7 +138,7 @@ const companyProjects = [
           <li> Loading and off-loading Decks, Access roads </li>
           <li> Parking areas and green aresas </li>
         </ul>
-      </Fragment>
+      </>
     ),
   },
   {
@@ -151,7 +149,7 @@ const companyProjects = [
     shortContent:
       "Considering the risk factor of earthquake in Tehran, the Netherlands Embassy decided to design and...",
     text: (
-      <Fragment>
+      <>
         <p>
           Considering the risk factor of earthquake in Tehran, the Netherlands
           Embassy decided to design and construct new Administrative and
@@ -212,7 +210,7 @@ const companyProjects = [
           standards respondent project, and therefore was awarded the whole
           project through an EPC contract.
         </p>
-      </Fragment>
+      </>
     ),
   },
   {
@@ -223,7 +221,7 @@ const companyProjects = [
     shortContent:
       "Due to Designing and constructing of new buildings in royal netherland embassy by novak co. ...",
     text: (
-      <Fragment>
+      <>
         <p>
           Due to Designing and constructing of new buildings in royal netherland
           embassy by novak co. ,Danish embassy set up a contract with novak co.
@@ -233,7 +231,7 @@ const companyProjects = [
           Subsequently novak started the job and submitted the needed design,
           drawings and documents for retrofitting of danish embassy buildings.
         </p>
-      </Fragment>
+      </>
     ),
   },
   {
