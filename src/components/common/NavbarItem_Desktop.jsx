@@ -5,16 +5,8 @@ import NavbarDropdown_Desktop from "./NavbarDropdown_Desktop";
 
 import classes from "../../styles/common/navbar.module.scss";
 
-const NavbarItem_Desktop = ({ item, depthLevel, parentIsOpen = null }) => {
+const NavbarItem_Desktop = ({ item, depthLevel }) => {
   const navigate = useNavigate();
-  const clickPermission = depthLevel === 0 || parentIsOpen;
-
-  const [cursor, setCursor] = useState("default");
-
-  useEffect(() => {
-    if (clickPermission) setCursor("pointer");
-    else setCursor("default");
-  }, [clickPermission]);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,10 +31,9 @@ const NavbarItem_Desktop = ({ item, depthLevel, parentIsOpen = null }) => {
       {item.subMenu ? (
         <>
           <div
-            style={{ cursor }}
             className={`${classes.navbar_title} ${innerMenuClass}`}
             onClick={() => {
-              if (clickPermission) setIsOpen((prevValue) => !prevValue);
+              setIsOpen((prevValue) => !prevValue);
             }}
           >
             <p>{item.title}</p>
@@ -72,14 +63,13 @@ const NavbarItem_Desktop = ({ item, depthLevel, parentIsOpen = null }) => {
         </>
       ) : (
         <div
-          style={{ cursor }}
           className={`${classes.navbar_title} ${innerMenuClass} ${
             depthLevel > 0
               ? classes.navbar_inner_link_title
               : classes.navbar_title_shadow
           }`}
           onClick={() => {
-            if (clickPermission) navigate(item.link);
+            navigate(item.link);
           }}
         >
           {item.title}

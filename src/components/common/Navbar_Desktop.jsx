@@ -1,7 +1,7 @@
 import NavbarItem_Desktop from "./NavbarItem_Desktop";
 import menuItems from "../../data information/menuItems";
 
-import mainLogo from "../../images/navbar/main_logo.svg";
+import mainLogo from "../../images/main_logo.svg";
 
 import classes from "../../styles/common/navbar.module.scss";
 
