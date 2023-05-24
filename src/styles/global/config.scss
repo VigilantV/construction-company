@@ -17,6 +17,10 @@ body {
   background-color: $darkGray;
 }
 
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
 ::-webkit-scrollbar-track {
   background: $darkGray;
 }
