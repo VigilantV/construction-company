@@ -1,0 +1,104 @@
+@use "../global/variables" as *;
+@use "../global//mixins" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw 10vw 2vw 6vw;
+  background-color: $darkGray;
+  color: $smokyWhite;
+}
+
+.logo {
+  width: 9vw;
+}
+
+.second_title {
+  font-size: 1.6vw;
+}
+
+.address {
+  font-size: 1.2vw;
+  padding-top: 0.3vw;
+}
+
+.links p {
+  display: inline-block;
+  font-size: 1.2vw;
+  padding-top: 0.4vw;
+  @include linearHover($smokyWhite, $lightRed);
+}
+
+.link_icons {
+  display: flex;
+  padding: 1.5vw 0 0;
+  gap: 1.5vw;
+}
+
+.icon {
+  width: 3vw;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #d72638;
+  }
+}
+
+.input_title {
+  font-size: 1.6vw;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1vw;
+  padding: 1vw 0;
+}
+
+.input_elements {
+  width: 27vw;
+  border: 1px solid $lightGray;
+  border-radius: 0.5vw;
+  font-size: 1.2vw;
+  padding: 0.8vw;
+  background-color: transparent;
+  color: $smokyWhite;
+
+  &::placeholder {
+    color: $lightGray;
+    font-size: 1.2vw;
+  }
+
+  &:focus {
+    outline: none;
+    border-width: 2px;
+    caret-color: $smokyWhite;
+  }
+}
+
+textarea.input_elements {
+  resize: none;
+  height: 14vw;
+}
+
+.btn {
+  width: 8vw;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  background-color: $lightRed;
+  color: $darkGray;
+  transition: background-color 0.5s, color 1s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $darkGray;
+    color: $lightRed;
+  }
+}
