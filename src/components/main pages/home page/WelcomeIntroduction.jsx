@@ -1,4 +1,4 @@
-import classes from "../../styles/main pages/home page/welcome.module.scss";
+import classes from "../../../styles/main pages/home page/welcome.module.scss";
 
 const WelcomeIntroduction = ({ title, content }) => {
   return (

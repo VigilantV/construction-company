@@ -7,8 +7,8 @@ import Card from "./Card";
 import companyProjects from "../../../data information/companyProjects";
 
 import classes from "../../../styles/main pages/home page/projects.module.scss";
-import leftArrow from "../../../images/home page/projects/left-arrow.svg";
-import rightArrow from "../../../images/home page/projects/right-arrow.svg";
+import leftarrow from "../../../images/left-arrow.svg";
+import rightArrow from "../../../images/right-arrow.svg";
 
 const Projects_Desktop = () => {
   const navigate = useNavigate();
@@ -26,7 +26,11 @@ const Projects_Desktop = () => {
   };
 
   const arrow = (src) => {
-    return <img src={src} alt="" />;
+    // return <img src={src} alt="" />;
+    <div
+      // className={className}
+      style={{  display: "block", background: "red" }}
+    />;
   };
 
   return (
@@ -38,7 +42,7 @@ const Projects_Desktop = () => {
         slidesToScroll={1}
         autoplay={true}
         autoplaySpeed={3000}
-        prevArrow={arrow(leftArrow)}
+        prevArrow={arrow(leftarrow)}
         nextArrow={arrow(rightArrow)}
       >
         {renderSlides()}

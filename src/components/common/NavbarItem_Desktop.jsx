@@ -13,8 +13,8 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    const closeHandler = (event) => {
-      if (isOpen && ref.current && !ref.current.contains(event.target)) {
+    const closeHandler = (e) => {
+      if (isOpen && ref.current && !ref.current.contains(e.target)) {
         setIsOpen(false);
       }
     };
