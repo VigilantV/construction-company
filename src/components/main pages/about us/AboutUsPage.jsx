@@ -1,0 +1,27 @@
+import Navbar_Desktop from "../../common/Navbar_Desktop";
+import Header from "../../common/Header";
+import AboutUsSection from "./AboutUsSection";
+import Footer from "../../common/Footer";
+import Certificates from "./Certificates";
+
+const AboutUsPage = () => {
+  const headerText = (
+    <h2 style={{ lineHeight: "2.7vw", marginTop: "4vw" }}>
+      20 Years Of Experiment
+      <br /> In The Engineering And Construction
+      <br /> From ImaginationTo Reality.
+    </h2>
+  );
+
+  return (
+    <>
+      <Navbar_Desktop />
+      <Header>{headerText}</Header>
+      <AboutUsSection />
+      <Certificates />
+      <Footer />
+    </>
+  );
+};
+
+export default AboutUsPage;
