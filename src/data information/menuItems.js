@@ -9,14 +9,14 @@ const subServices = services.map((service) => {
 const subCompanyProjects = companyProjects.map((companyProject) => {
   return {
     title: companyProject.title,
-    link: `/projects/${companyProject.link}`,
+    link: `/projects/company_projects/${companyProject.link}`,
   };
 });
 
 const subDirectorProjects = directorProjects.map((directorProject) => {
   return {
     title: directorProject.title,
-    link: `/projects/${directorProject.link}`,
+    link: `/projects/director_projects/${directorProject.link}`,
   };
 });
 

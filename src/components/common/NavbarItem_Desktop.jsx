@@ -69,6 +69,7 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
               : classes.navbar_title_shadow
           }`}
           onClick={() => {
+            console.log(item.link);
             navigate(item.link);
           }}
         >
