@@ -17,11 +17,11 @@ const VerticalNavbar = ({
         {dataDirectory.map((option) => (
           <div
             key={option.id}
-            className={
+            className={`${classes.option}  ${
               activeId === option.id
-                ? classes.active_option
-                : classes.inactive_option
-            }
+                ? classes.option_active
+                : classes.option_inactive
+            }`}
             onClick={() => navigate(`${parentLink}/${option.link}`)}
           >
             <h2> {option.title} </h2>

@@ -1,23 +1,21 @@
-.desk_description_section {
-    width: 81vw;
-    background-color: #252525;
-  }
-  
-  .desk_title {
-    margin: 3vh 0 5vh 3vw;
-    font-size: 1.8vw;
-    font-weight: 600;
-    padding-right: 7vw;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    color: #969696;
-  }
-  
-  .desk_text {
-    margin: 3vh 0 5vh 3vw;
-    font-size: 1.2vw;
-    font-weight: 500;
-    padding-right: 7vw;
-    text-align: justify;
-    color: #fff;
-  }
+@use "../../global//variables" as *;
+
+.description_section {
+  width: 80vw;
+  background-color: $darkGray;
+}
+
+.title {
+  margin: 1.5vw 0 0.8vw 3vw;
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  color: $lightGray;
+}
+
+.text {
+  margin: 1.5vw 0 0.8vw 3vw;
+  font-size: 1.2vw;
+  padding-right: 8vw;
+  text-align: justify;
+  color: $smokyWhite;
+}

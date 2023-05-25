@@ -1,12 +1,11 @@
 import classes from "../../../styles/main pages/template page/description.module.scss";
 
-const Description = (props) => {
+const Description = ({ title, text }) => {
   return (
     <>
-      <div className={classes.desk_description_section}>
-        <h2 className={classes.desk_title}>{props.title}</h2>
-        <div className={classes.desk_text}>{props.text}</div>
-        {props.children}
+      <div className={classes.description_section}>
+        <h2 className={classes.title}>{title}</h2>
+        <div className={classes.text}>{text}</div>
       </div>
     </>
   );
