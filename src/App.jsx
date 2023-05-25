@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./components/main pages/home page/HomePage";
 import AboutUsPage from "./components/main pages/about us/AboutUsPage";
 import TemplatePage from "./components/main pages/template page/TemplatePage";
+import HSE_Page from "./components/main pages/HSE/HSE_Page";
 import services from "./data information/services";
 import companyProjects from "./data information/companyProjects";
 import directorProjects from "./data information/directorProjects";
@@ -71,6 +72,8 @@ const App = () => {
             ))}
           </Route>
         </Route>
+
+        <Route exact path="/HSE" element={<HSE_Page />} />
 
         <Route path="/" element={<Navigate replace to="/home" />} />
       </Routes>
