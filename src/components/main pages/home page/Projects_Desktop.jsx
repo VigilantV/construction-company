@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,10 +8,12 @@ import Card from "./Card";
 import companyProjects from "../../../data information/companyProjects";
 
 import classes from "../../../styles/main pages/home page/projects.module.scss";
-import leftarrow from "../../../images/left-arrow.svg";
-import rightArrow from "../../../images/right-arrow.svg";
+import nextArrow from "../../../images/left-arrow.svg";
+import prevArrow from "../../../images/right-arrow.svg";
 
 const Projects_Desktop = () => {
+  const projectsRef = useRef(null);
+
   const navigate = useNavigate();
 
   const renderSlides = () => {
@@ -25,28 +28,37 @@ const Projects_Desktop = () => {
     ));
   };
 
-  const arrow = (src) => {
-    // return <img src={src} alt="" />;
-    <div
-      // className={className}
-      style={{  display: "block", background: "red" }}
-    />;
-  };
-
   return (
     <div className={classes.projects}>
       <h2 className={classes.projects_title}>LATEST PROJECTS</h2>
-      <Slider
-        dots={false}
-        slidesToShow={4}
-        slidesToScroll={1}
-        autoplay={true}
-        autoplaySpeed={3000}
-        prevArrow={arrow(leftarrow)}
-        nextArrow={arrow(rightArrow)}
-      >
-        {renderSlides()}
-      </Slider>
+      <div className={classes.slider}>
+        <img
+          className={classes.slider_arrow}
+          src={nextArrow}
+          alt="next_arrow"
+          onClick={() => projectsRef.current.slickNext()}
+        />
+        <div style={{ width: "85vw" }}>
+          <Slider
+            ref={projectsRef}
+            dots={false}
+            slidesToShow={4}
+            slidesToScroll={1}
+            autoplay={true}
+            autoplaySpeed={3000}
+            arrows={false}
+          >
+            {renderSlides()}
+          </Slider>
+        </div>
+
+        <img
+          className={classes.slider_arrow}
+          src={prevArrow}
+          alt="prev_arrow"
+          onClick={() => projectsRef.current.slickPrev()}
+        />
+      </div>
     </div>
   );
 };

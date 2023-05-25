@@ -1,7 +1,6 @@
 @use "../../global/variables.scss" as *;
 
 .projects {
-  margin: 0 10vw;
   color: $smokyWhite;
 
   &_title {
@@ -9,6 +8,16 @@
     font-size: 1.7vw;
     font-weight: bold;
     margin: 4vw 0 2vw;
+  }
+}
+
+.slider {
+  display: flex;
+  column-gap: 1.5vw;
+  padding: 2vw 3vw;
+
+  &_arrow {
+    width: 3vw;
   }
 }
 
@@ -51,8 +60,8 @@
 
 .arrow_icon {
   position: absolute;
-  right: 0.3vw;
-  top: 9.7vw;
+  right: 0.5vw;
+  top: 10.3vw;
   width: 2.6vw;
   cursor: pointer;
 }
