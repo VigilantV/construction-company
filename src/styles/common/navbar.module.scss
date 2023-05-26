@@ -24,32 +24,32 @@
     column-gap: 6vw;
     list-style: none;
   }
+}
 
-  &_title {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5vw;
-    font-size: 1.3vw;
-    color: whitesmoke;
-    cursor: pointer;
-  }
+.title {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5vw;
+  font-size: 1.3vw;
+  color: whitesmoke;
+  cursor: pointer;
 
-  &_title_shadow {
+  &_shadow {
     &:hover {
       text-shadow: -4px -3px 4px #000000;
     }
     transition: text-shadow 0.3s;
   }
 
-  &_inner_link_title {
+  &_inner_link {
     @include linearHover($smokyWhite, $lightRed);
   }
-}
 
-.inner_menus_title {
-  padding: 0 0.5vw 0 0.7vw;
-  margin: 1.4vw 0;
-  font-size: 1.2vw;
+  &_inner_menus {
+    padding: 0 0.5vw 0 0.7vw;
+    margin: 1.4vw 0;
+    font-size: 1.2vw;
+  }
 }
 
 .dropdown {

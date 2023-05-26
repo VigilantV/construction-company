@@ -24,14 +24,14 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
     };
   }, [isOpen]);
 
-  const innerMenuClass = depthLevel > 0 ? classes.inner_menus_title : "";
+  const innerMenuClass = depthLevel > 0 ? classes.title_inner_menus : "";
 
   return (
-    <li className={classes.navbar_item} ref={ref}>
+    <li ref={ref}>
       {item.subMenu ? (
         <>
           <div
-            className={`${classes.navbar_title} ${innerMenuClass}`}
+            className={`${classes.title} ${innerMenuClass}`}
             onClick={() => {
               setIsOpen((prevValue) => !prevValue);
             }}
@@ -63,13 +63,10 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
         </>
       ) : (
         <div
-          className={`${classes.navbar_title} ${innerMenuClass} ${
-            depthLevel > 0
-              ? classes.navbar_inner_link_title
-              : classes.navbar_title_shadow
+          className={`${classes.title} ${innerMenuClass} ${
+            depthLevel > 0 ? classes.title_inner_link : classes.title_shadow
           }`}
           onClick={() => {
-            console.log(item.link);
             navigate(item.link);
           }}
         >
