@@ -6,9 +6,10 @@ import Certificates from "./Certificates";
 
 const AboutUsPage = () => {
   const headerText = (
-    <h2 style={{ lineHeight: "2.7vw", marginTop: "4vw" }}>
+    <h2 style={{ fontSize: "2.1vw", lineHeight: "2.7vw", marginTop: "4vw" }}>
       20 Years Of Experiment
-      <br /> In The Engineering And Construction
+      <br /> In The Engineering
+      <br /> And Construction
       <br /> From ImaginationTo Reality.
     </h2>
   );

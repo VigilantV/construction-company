@@ -20,8 +20,14 @@
   }
 
   &_img {
-    width: 16vw;
+    width: 15.5vw;
+    margin: 1vw;
+    transition: 0.5s;
     cursor: pointer;
+
+    &:hover {
+      box-shadow: rgba(211, 76, 76, 0.8) 0px 5px 15px;
+    }
   }
 }
 

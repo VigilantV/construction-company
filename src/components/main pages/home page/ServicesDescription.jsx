@@ -7,6 +7,7 @@ const ServicesDescription = ({
   title,
   isActive,
   shortContent,
+  parentLink,
   link,
   onChangeIndex,
 }) => {
@@ -30,7 +31,7 @@ const ServicesDescription = ({
       <div style={{ height }} className={classes.detail_container}>
         <div className={isActive ? classes.active_detail : ""}>
           <p className={classes.short_content}>{shortContent}</p>
-          <Link to={link} className={classes.link}>
+          <Link to={`${parentLink}/${link}`} className={classes.link}>
             learn more
           </Link>
         </div>

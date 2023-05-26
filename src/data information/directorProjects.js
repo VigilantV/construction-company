@@ -103,8 +103,8 @@ const directorProjects = [
         <p> Iranian Blood Research & Fractionation Company (Tehran-Iran) </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -115,8 +115,8 @@ const directorProjects = [
         <p> Beasat Industrial Complex (Qom – Iran) </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -126,8 +126,8 @@ const directorProjects = [
         <p> Saman Teb Pooyan Company (Semnan Industrial Park) </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -137,8 +137,8 @@ const directorProjects = [
         <p> Shahid Hemmat Industrial Complex (Tehran-Iran) </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -154,8 +154,8 @@ const directorProjects = [
         </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -168,8 +168,8 @@ const directorProjects = [
         </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -187,8 +187,8 @@ const directorProjects = [
         </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -198,8 +198,8 @@ const directorProjects = [
         <p> Rouzdarou Pharmaceutical Company (Tehran-Iran) </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -210,8 +210,8 @@ const directorProjects = [
         <p> Dineh Iran Industries Complex (Km 2 Qazvin , Takestan-Qazvin) </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -222,8 +222,8 @@ const directorProjects = [
         <p> Loghman Pharmaceutical & Hygienic Company (Tehran-Iran) </p>
         <ul
           style={{
-            paddingTop: "0.5vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.2vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >

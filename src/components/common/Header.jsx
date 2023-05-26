@@ -16,9 +16,9 @@ const Header = ({ children }) => {
             <p className={classes.address}>{info.address}</p>
             <p className={classes.address}>{info.PO_Box}</p>
             <div className={classes.links}>
-              <p>{info.number}</p>
+              <p style={{ fontSize: "1.3vw" }}>{info.number}</p>
               <br />
-              <p>{info.email}</p>
+              <p style={{ fontSize: "1.3vw" }}>{info.email}</p>
             </div>
           </>
         )}

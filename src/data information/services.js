@@ -76,7 +76,7 @@ const services = [
           mechanical and electrical:
         </p>
 
-        <ul style={{ padding: "2vh 0 2vh 0.8vw" }}>
+        <ul style={{ padding: "1vw 0 1vw 0.8vw" }}>
           <li>Design of buildings and landscaping of residential projects.</li>
           <li> Design of buildings and landscaping of commercial projects. </li>
           <li>

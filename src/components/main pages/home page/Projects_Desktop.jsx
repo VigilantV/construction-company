@@ -23,7 +23,7 @@ const Projects_Desktop = () => {
         imgSrc={cardInfo.image}
         title={cardInfo.title}
         content={cardInfo.shortContent}
-        onClick={() => navigate(cardInfo.link)}
+        onClick={() => navigate(`/projects/company_projects/${cardInfo.link}`)}
       />
     ));
   };

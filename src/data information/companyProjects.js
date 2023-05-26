@@ -30,7 +30,7 @@ const companyProjects = [
           (India) Supervision Consultant: Tarh-no-andishan consultant engineers
         </p>
 
-        <p style={{ paddingTop: "2vh", paddingBottom: "1vh" }}>
+        <p style={{ paddingTop: "0.8vw", paddingBottom: "0.8vw" }}>
           Project overview:
         </p>
 
@@ -41,11 +41,11 @@ const companyProjects = [
           <li> Final product of factory: home care powder </li>
         </ul>
 
-        <p style={{ paddingTop: "2vh" }}>
+        <p style={{ paddingTop: "0.8vw" }}>
           Here under main section of project has been described:
         </p>
 
-        <h3 style={{ paddingBottom: "1vh" }}> A.High-Bay Building: </h3>
+        <h3 style={{ paddingBottom: "0.4vw" }}> A.High-Bay Building: </h3>
         <p>
           This building comprises of 6 floors with overall height of just above
           40m. Here under the main department of each floor has been described:
@@ -53,8 +53,8 @@ const companyProjects = [
 
         <ul
           style={{
-            paddingTop: "2vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.8vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >
@@ -86,7 +86,7 @@ const companyProjects = [
         </ul>
 
         <h3> B.Warehouse Building: </h3>
-        <p style={{ paddingBottom: "2vh" }}>
+        <p style={{ paddingBottom: "0.8vw" }}>
           This building provides a protected area for storing Raw Materials as
           well as finished powder packaged product.
         </p>
@@ -123,7 +123,7 @@ const companyProjects = [
           including:
         </p>
 
-        <ul style={{ paddingTop: "2vh", paddingLeft: "0.8vw" }}>
+        <ul style={{ paddingTop: "0.8vw", paddingLeft: "0.8vw" }}>
           <li> Material storage </li>
           <li> Production and finished goods saloons </li>
           <li> Administrative office </li>
@@ -168,8 +168,8 @@ const companyProjects = [
 
         <ol
           style={{
-            paddingTop: "2vh",
-            paddingBottom: "2vh",
+            paddingTop: "0.8vw",
+            paddingBottom: "0.8vw",
             paddingLeft: "0.8vw",
           }}
         >

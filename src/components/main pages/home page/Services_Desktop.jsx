@@ -23,6 +23,7 @@ const Services_Desktop = () => {
         title={service.title}
         isActive={activeIndex === index}
         shortContent={service.shortContent}
+        parentLink="/services"
         link={service.link}
         onChangeIndex={() => setActiveIndex(index)}
       />
