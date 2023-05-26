@@ -6,13 +6,6 @@ import mainLogo from "../../images/main_logo.svg";
 import classes from "../../styles/common/navbar.module.scss";
 
 const Navbar_Desktop = () => {
-  // function scrollToContact() {
-  //   var Scroll = require("react-scroll");
-  //   var scroll = Scroll.animateScroll;
-
-  //   scroll.scrollToBottom();
-  // }
-
   return (
     <nav className={classes.navbar}>
       <img className={classes.navbar_img} src={mainLogo} alt="main-logo" />

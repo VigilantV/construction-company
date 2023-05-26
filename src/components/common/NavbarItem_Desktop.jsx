@@ -67,7 +67,11 @@ const NavbarItem_Desktop = ({ item, depthLevel }) => {
             depthLevel > 0 ? classes.title_inner_link : classes.title_shadow
           }`}
           onClick={() => {
-            navigate(item.link);
+            if (item.title === "CONTACT US")
+              document
+                .getElementById("contact_us")
+                .scrollIntoView({ behavior: "smooth" });
+            else navigate(item.link);
           }}
         >
           {item.title}
