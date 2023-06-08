@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef } from "react";
 
 import info from "../../data information/companyInformations";
 import socialIcons from "../../data information/socialIcons";
@@ -7,8 +7,8 @@ import classes from "../../styles/common/footer.module.scss";
 import logo from "../../images/main_logo.svg";
 
 const Footer = () => {
-  const [emailValue, setEmailValue] = useState("");
-  const [textAreaValue, setTextAreaValue] = useState("");
+  const emailValueRef = useRef("");
+  const textAreaRef = useRef("");
 
   const companyInfo = (
     <>
@@ -22,6 +22,8 @@ const Footer = () => {
       </div>
     </>
   );
+
+  console.log("potato");
 
   return (
     <div id="contact_us" className={classes.footer}>
@@ -42,24 +44,20 @@ const Footer = () => {
           className={classes.form}
           onSubmit={(e) => {
             e.preventDefault();
-            setEmailValue("");
-            setTextAreaValue("");
+            emailValueRef.current.value = "";
+            textAreaRef.current.value = "";
           }}
         >
           <input
+            ref={emailValueRef}
             className={classes.input_elements}
             type="email"
             placeholder="Email"
-            value={emailValue}
-            onChange={(e) => {
-              setEmailValue(e.target.value);
-            }}
           />
           <textarea
+            ref={textAreaRef}
             className={classes.input_elements}
             placeholder="Message"
-            value={textAreaValue}
-            onChange={(e) => setTextAreaValue(e.target.value)}
           />
           <button className={classes.btn} type="submit">
             submit
