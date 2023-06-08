@@ -23,8 +23,6 @@ const Footer = () => {
     </>
   );
 
-  console.log("potato");
-
   return (
     <div id="contact_us" className={classes.footer}>
       <div>
