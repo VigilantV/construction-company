@@ -1,27 +1,59 @@
 @use "../../global/variables" as *;
+@use "../../global/mixins" as *;
 
-.customers {
-  margin: 3vw 0 0;
+.section {
   background-color: white;
-  padding: 0 10vw;
+
+  @include devices(desktop) {
+    margin: 3vw 0 0;
+    padding: 0 10vw;
+  }
+
+  @include devices(mobile) {
+    margin: 3vh 0 0;
+  }
 }
 
 .title {
-  padding: 2vw 0 0;
-  font-size: 1.7vw;
   font-weight: bold;
   text-align: center;
   color: $darkGray;
+
+  @include devices(desktop) {
+    font-size: 1.7vw;
+    padding: 2vw 0 0;
+  }
+
+  @include devices(mobile) {
+    font-size: 5.5vw;
+    padding: 2vh 0 0;
+  }
 }
 
-.list {
+.customers {
   display: flex;
   justify-content: center;
-  column-gap: 5vw;
-  padding: 2.5vw 0;
+
+  @include devices(desktop) {
+    column-gap: 5vw;
+    padding: 2.5vw 0;
+  }
+
+  @include devices(mobile) {
+    flex-wrap: wrap;
+    column-gap: 8vw;
+    padding: 2.5vh 20vw;
+  }
 }
 
 .logo {
-  width: 10vw;
-  height: 10vw;
+  @include devices(desktop) {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  @include devices(mobile) {
+    width: 22vw;
+    height: 22vw;
+  }
 }

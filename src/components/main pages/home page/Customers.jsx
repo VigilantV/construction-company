@@ -10,9 +10,9 @@ const Customers = () => {
   const logos = [Danish, Embassy, Fine, Mammut, Nuqul, Unilever];
 
   return (
-    <div className={classes.customers}>
+    <div className={classes.section}>
       <h2 className={classes.title}>OUR CUSTOMERS</h2>
-      <div className={classes.list}>
+      <div className={classes.customers}>
         {logos.map((logo, index) => (
           <img
             key={index}
