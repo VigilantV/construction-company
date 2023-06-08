@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ServicesDescription from "./ServicesDescription";
 import services from "../../../data information/services";
 
-import classes from "../../../styles/main pages/home page/services.module.scss";
+import classes from "../../../styles/main pages/home page/services_Desktop.module.scss";
 
 const Services_Desktop = () => {
   const [activeIndex, setActiveIndex] = useState(0);

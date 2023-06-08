@@ -1,13 +1,28 @@
-import classes from "../../../styles/main pages/home page/projects.module.scss";
+import classes from "../../../styles/main pages/home page/card.module.scss";
 import ArrowIcon from "../../../images/home page/arrow.svg";
 
-const Card = ({ imgSrc, title, content, onClick }) => {
+const Card = ({ imgSrc, title, content, isLastCard, onClick }) => {
   return (
-    <div className={classes.card_wrapper} onClick={onClick}>
-      <img className={classes.image} src={imgSrc} alt={title} />
+    <div
+      style={{ marginRight: isLastCard ? "3vw" : "0" }}
+      className={classes.card_wrapper}
+    >
+      <img
+        className={classes.image}
+        src={imgSrc}
+        alt={title}
+        onClick={onClick}
+      />
       <div className={classes.lower_of_card}>
-        <h1 className={classes.title}>{title}</h1>
-        <img className={classes.arrow_icon} src={ArrowIcon} alt="arrow" />
+        <div className={classes.title_line}>
+          <h1 className={classes.title}>{title}</h1>
+          <img
+            className={classes.arrow_icon}
+            src={ArrowIcon}
+            alt="arrow"
+            onClick={onClick}
+          />
+        </div>
         <p className={classes.content}>{content}</p>
       </div>
     </div>

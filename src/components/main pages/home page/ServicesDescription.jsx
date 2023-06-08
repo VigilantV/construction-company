@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import classes from "../../../styles/main pages/home page/services.module.scss";
+import classes from "../../../styles/main pages/home page/services_Desktop.module.scss";
 
 const ServicesDescription = ({
   title,
