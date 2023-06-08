@@ -1,8 +1,11 @@
+import { useDevice } from "./use contexts/DeviceContext";
 import info from "../../data information/companyInformations";
 
 import classes from "../../styles/common/header.module.scss";
 
 const Header = ({ children }) => {
+  const isMobile = useDevice();
+
   return (
     <>
       <div className={classes.header}></div>
@@ -16,14 +19,14 @@ const Header = ({ children }) => {
             <p className={classes.address}>{info.address}</p>
             <p className={classes.address}>{info.PO_Box}</p>
             <div className={classes.links}>
-              <p style={{ fontSize: "1.3vw" }}>{info.number}</p>
+              <p>{info.number}</p>
               <br />
-              <p style={{ fontSize: "1.3vw" }}>{info.email}</p>
+              <p>{info.email}</p>
             </div>
           </>
         )}
       </div>
-      <div className={classes.diagonal_shadow}></div>
+      {!isMobile && <div className={classes.diagonal_shadow}></div>}
     </>
   );
 };

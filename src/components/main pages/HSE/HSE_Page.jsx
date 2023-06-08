@@ -1,4 +1,3 @@
-import Navbar_Desktop from "../../common/Navbar_Desktop";
 import Header from "../../common/Header";
 import HSE_Section from "./HSE_Section";
 import Footer from "../../common/Footer";
@@ -13,7 +12,6 @@ const aboutUsHeaderText = (
 const HSE_Page = () => {
   return (
     <>
-      <Navbar_Desktop />
       <Header>{aboutUsHeaderText}</Header>
       <HSE_Section />
       <Footer />

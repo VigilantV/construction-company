@@ -1,4 +1,3 @@
-import Navbar_Desktop from "../../common/Navbar_Desktop";
 import Header from "../../common/Header";
 import Welcome from "./Welcome";
 import Services_Desktop from "./Services_Desktop";
@@ -9,7 +8,6 @@ import Footer from "../../common/Footer";
 const HomePage = () => {
   return (
     <>
-      <Navbar_Desktop />
       <Header />
       <Welcome />
       <Services_Desktop />

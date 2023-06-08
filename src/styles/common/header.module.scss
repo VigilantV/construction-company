@@ -2,38 +2,85 @@
 @use "../global/mixins" as *;
 
 .header {
-  height: 47vw;
   background-image: url("../../images/header/main_header.svg");
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include devices(desktop) {
+    height: 47vw;
+  }
+
+  @include devices(mobile) {
+    height: 48vh;
+  }
+
   &_text {
     position: absolute;
-    top: 18vw;
-    left: 4vw;
     z-index: 10;
     color: $smokyWhite;
+
+    @include devices(desktop) {
+      top: 18vw;
+      left: 4vw;
+    }
+
+    @include devices(mobile) {
+      top: 0;
+      height: 48vh;
+      width: 100vw;
+      text-align: center;
+      padding-top: 12vh;
+      background-color: #000000c0;
+    }
   }
 }
 
 .first_title {
-  font-size: 3.7vw;
+  @include devices(desktop) {
+    font-size: 3.7vw;
+  }
+
+  @include devices(mobile) {
+    font-size: 8.7vw;
+  }
 }
 
 .second_title {
-  font-size: 2.7vw;
-  margin: 0.6vw 0 2.4vw;
+  @include devices(desktop) {
+    font-size: 2.7vw;
+    margin: 0.6vw 0 2.4vw;
+  }
+
+  @include devices(mobile) {
+    font-size: 6.5vw;
+    margin: 1vh 0 3vh;
+  }
 }
 
 .address {
-  font-size: 1.2vw;
-  margin-bottom: 1vw;
+  @include devices(desktop) {
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+  }
+
+  @include devices(mobile) {
+    font-size: 3.8vw;
+    margin-bottom: 1vh;
+  }
 }
 
 .links p {
   display: inline-block;
-  padding-bottom: 0.4vw;
-  @include linearHover($smokyWhite, $lightRed);
+
+  @include devices(desktop) {
+    padding-bottom: 0.4vw;
+    font-size: 1.3vw;
+    @include linearHover();
+  }
+
+  @include devices(mobile) {
+    font-size: 3.8vw;
+  }
 }
 
 .diagonal_shadow {

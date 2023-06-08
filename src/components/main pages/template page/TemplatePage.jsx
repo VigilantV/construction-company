@@ -1,4 +1,3 @@
-import Navbar_Desktop from "../../common/Navbar_Desktop";
 import Header from "../../common/Header";
 import VerticalNavbar from "./VerticalNavbar";
 import Description from "./Description";
@@ -20,7 +19,6 @@ const TemplatePage = ({
 }) => {
   return (
     <>
-      <Navbar_Desktop />
       <Header>{aboutUsHeaderText}</Header>
       <div style={{ display: "flex" }}>
         <VerticalNavbar

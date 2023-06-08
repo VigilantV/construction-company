@@ -42,7 +42,7 @@
   }
 
   &_inner_link {
-    @include linearHover($smokyWhite, $lightRed);
+    @include linearHover();
   }
 
   &_inner_menus {

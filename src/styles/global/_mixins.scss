@@ -1,11 +1,18 @@
 @use "../global/variables" as *;
 
-@mixin linearHover(
-  $firstColor: #fff,
-  $secondColor: #ff0000,
-  $display: "inline-block"
-) {
-  display: $display;
+@mixin devices($device) {
+  @if $device == desktop {
+    @media only screen and (min-width: 581px) {
+      @content;
+    }
+  } @else if $device == mobile {
+    @media only screen and (max-width: 580px) {
+      @content;
+    }
+  }
+}
+
+@mixin linearHover($firstColor: $smokyWhite, $secondColor: $lightRed) {
   background-size: 200% 100%;
   background-position: 100%;
   background-clip: text;

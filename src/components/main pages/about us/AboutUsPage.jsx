@@ -1,4 +1,3 @@
-import Navbar_Desktop from "../../common/Navbar_Desktop";
 import Header from "../../common/Header";
 import AboutUsSection from "./AboutUsSection";
 import Footer from "../../common/Footer";
@@ -16,7 +15,6 @@ const AboutUsPage = () => {
 
   return (
     <>
-      <Navbar_Desktop />
       <Header>{headerText}</Header>
       <AboutUsSection />
       <Certificates />
