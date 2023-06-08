@@ -18,7 +18,7 @@ const Customers = () => {
             key={index}
             className={classes.logo}
             src={logo}
-            alt={"logo_" + index}
+            alt={"logo " + index}
           />
         ))}
       </div>

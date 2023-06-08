@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import NavbarDropdown_Desktop from "./NavbarDropdown_Desktop";
 
-import classes from "../../styles/common/navbar.module.scss";
+import classes from "../../../styles/common/navbar_Desktop.module.scss";
 
 const NavbarItem_Desktop = ({ item, depthLevel }) => {
   const navigate = useNavigate();

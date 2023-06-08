@@ -3,7 +3,8 @@ const companyInformations = {
   secondTitle: "Construction Company",
   address: (
     <>
-      West unit, Third floor, No.17, 2nd st., Navvab Ave, <br /> TEHRAN, IRAN"
+      West unit, Third floor, No.17, 2nd st.,
+      <br /> Navvab Ave, TEHRAN, IRAN"
     </>
   ),
   PO_Box: "P.O. Box: 1234567891",

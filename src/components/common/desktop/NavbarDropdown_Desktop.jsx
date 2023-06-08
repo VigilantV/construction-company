@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import NavbarItem_Desktop from "./NavbarItem_Desktop";
 
-import classes from "../../styles/common/navbar.module.scss";
+import classes from "../../../styles/common/navbar_Desktop.module.scss";
 
 const NavbarDropdown_Desktop = ({ menu, isOpen, depthLevel }) => {
   const [opacity, setOpacity] = useState(0);

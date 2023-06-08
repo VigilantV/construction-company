@@ -35,7 +35,7 @@ const Projects_Desktop = () => {
         <img
           className={classes.slider_arrow}
           src={nextArrow}
-          alt="next_arrow"
+          alt="next arrow"
           onClick={() => projectsRef.current.slickNext()}
         />
         <div style={{ width: "85vw" }}>
@@ -55,7 +55,7 @@ const Projects_Desktop = () => {
         <img
           className={classes.slider_arrow}
           src={prevArrow}
-          alt="prev_arrow"
+          alt="prev arrow"
           onClick={() => projectsRef.current.slickPrev()}
         />
       </div>

@@ -1,5 +1,5 @@
 import { Fragment, useState, useRef } from "react";
-import ReactDOM from "react-dom";
+import { createPortal } from "react-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -49,7 +49,7 @@ const Certificates = () => {
         <img
           className={classes.arrow}
           src={nextArrow}
-          alt="next_arrow"
+          alt="next arrow"
           onClick={() => certificatesRef.current.slickNext()}
         />
         <div style={{ width: "85vw" }}>
@@ -67,7 +67,7 @@ const Certificates = () => {
                 <img
                   className={classes.certificate_img}
                   src={certificate.img}
-                  alt={`cetificate_${certificate.id + 1}`}
+                  alt={`cetificate ${certificate.id + 1}`}
                   onMouseDown={(e) => {
                     mouseDownCoords(e);
                   }}
@@ -82,17 +82,17 @@ const Certificates = () => {
         <img
           className={classes.arrow}
           src={prevArrow}
-          alt="prev_arrow"
+          alt="prev arrow"
           onClick={() => certificatesRef.current.slickPrev()}
         />
       </div>
       {certificateIsShown &&
-        ReactDOM.createPortal(
+        createPortal(
           <Backdrop onHideCertificate={hideCertificate}></Backdrop>,
           portalElement
         )}
       {certificateIsShown &&
-        ReactDOM.createPortal(
+        createPortal(
           <CertificateCard
             currentImageIndex={currentImageIndex}
             setCurrentImageIndex={setCurrentImageIndex}

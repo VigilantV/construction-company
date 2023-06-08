@@ -19,12 +19,12 @@ const HSE_Section = () => {
         <img
           className={classes.img}
           src={certificate1}
-          alt="cetificate_1"
+          alt="cetificate 1"
         />
         <img
           className={classes.img}
           src={certificate2}
-          alt="cetificate_2"
+          alt="cetificate 2"
         />
       </div>
     </div>
