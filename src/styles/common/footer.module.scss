@@ -3,74 +3,163 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  padding: 2vw 10vw 2vw 6vw;
   background-color: black;
   color: $smokyWhite;
+
+  @include devices(desktop) {
+    justify-content: space-between;
+    padding: 2vw 10vw 2vw 6vw;
+  }
+
+  @include devices(mobile) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 4vh 10vw 4vh;
+  }
+}
+
+.info_wrapper {
+  @include devices(mobile) {
+    text-align: center;
+  }
 }
 
 .logo {
-  width: 9vw;
+  @include devices(desktop) {
+    width: 9vw;
+  }
+
+  @include devices(mobile) {
+    width: 20vw;
+    margin-right: 3vw;
+  }
 }
 
 .second_title {
-  font-size: 1.6vw;
+  @include devices(desktop) {
+    font-size: 1.6vw;
+  }
+
+  @include devices(mobile) {
+    font-size: 5.5vw;
+  }
 }
 
 .address {
-  font-size: 1.2vw;
-  padding-top: 0.3vw;
+  @include devices(desktop) {
+    font-size: 1.2vw;
+    padding-top: 0.3vw;
+  }
+
+  @include devices(mobile) {
+    font-size: 3vw;
+    padding-top: 1vh;
+  }
 }
 
 .links p {
   display: inline-block;
-  font-size: 1.2vw;
-  padding-top: 0.4vw;
-  @include linearHover();
+
+  @include devices(desktop) {
+    font-size: 1.2vw;
+    padding-top: 0.4vw;
+    @include linearHover();
+  }
+
+  @include devices(mobile) {
+    font-size: 3vw;
+    padding-top: 1vh;
+  }
 }
 
 .link_icons {
   display: flex;
-  padding: 1.5vw 0 0;
-  gap: 1.5vw;
+
+  @include devices(desktop) {
+    padding: 1.5vw 0 0;
+    gap: 1.5vw;
+  }
+
+  @include devices(mobile) {
+    padding: 3vh 0 0;
+    gap: 3vw;
+  }
 }
 
 .icon {
-  width: 3vw;
   border-radius: 50%;
-  transition: background-color 0.3s;
-  &:hover {
-    background-color: #d72638;
+
+  @include devices(desktop) {
+    width: 3vw;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #d72638;
+    }
+  }
+
+  @include devices(mobile) {
+    width: 8.5vw;
   }
 }
 
 .input_title {
-  font-size: 1.6vw;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
+
+  @include devices(desktop) {
+    font-size: 1.6vw;
+  }
+
+  @include devices(mobile) {
+    font-size: 5.5vw;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1vw;
-  padding: 1vw 0;
+
+  @include devices(desktop) {
+    row-gap: 1vw;
+    padding: 1vw 0;
+  }
+
+  @include devices(mobile) {
+    row-gap: 1.5vh;
+    padding: 1.5vh 0;
+  }
 }
 
 .input_elements {
-  width: 27vw;
   border: 1px solid $lightGray;
   border-radius: 0.5vw;
-  font-size: 1.2vw;
-  padding: 0.8vw;
   background-color: transparent;
   color: $smokyWhite;
 
+  @include devices(desktop) {
+    width: 27vw;
+    font-size: 1.2vw;
+    padding: 0.8vw;
+  }
+
+  @include devices(mobile) {
+    width: 60vw;
+    font-size: 3vw;
+    padding: 1.5vh 2vw;
+  }
+
   &::placeholder {
     color: $lightGray;
-    font-size: 1.2vw;
+
+    @include devices(desktop) {
+      font-size: 1.2vw;
+    }
+
+    @include devices(mobile) {
+      font-size: 3vw;
+    }
   }
 
   &:focus {
@@ -82,12 +171,29 @@
 
 textarea.input_elements {
   resize: none;
-  height: 14vw;
+
+  @include devices(desktop) {
+    height: 14vw;
+  }
+
+  @include devices(mobile) {
+    height: 15vh;
+  }
 }
 
 .btn {
-  width: 8vw;
-  font-size: 1.2vw;
-  padding: 0.5vw;
   @include buttonHover($darkGray, $lightRed, $lightRed, $darkGray);
+
+  @include devices(desktop) {
+    width: 8vw;
+    font-size: 1.2vw;
+    padding: 0.5vw;
+  }
+
+  @include devices(mobile) {
+    width: 20vw;
+    font-size: 3vw;
+    padding: 1vh 0.5vw;
+    border-radius: 1.5vw;
+  }
 }

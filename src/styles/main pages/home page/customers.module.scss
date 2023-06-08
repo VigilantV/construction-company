@@ -41,7 +41,7 @@
 
   @include devices(mobile) {
     flex-wrap: wrap;
-    column-gap: 8vw;
+    column-gap: 12vw;
     padding: 2.5vh 20vw;
   }
 }
@@ -53,7 +53,7 @@
   }
 
   @include devices(mobile) {
-    width: 22vw;
-    height: 22vw;
+    width: 21vw;
+    height: 21vw;
   }
 }

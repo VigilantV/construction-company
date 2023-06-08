@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <div id="contact_us" className={classes.footer}>
-      <div>
+      <div className={classes.info_wrapper}>
         <img src={logo} className={classes.logo} alt="logo" />
         <div>{companyInfo}</div>
         <div className={classes.link_icons}>
