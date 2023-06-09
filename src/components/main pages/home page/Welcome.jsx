@@ -1,5 +1,5 @@
-import WelcomeIntroduction from "./WelcomeIntroduction";
 import introductions from "../../../data information/introductions";
+import WelcomeIntroduction from "./WelcomeIntroduction";
 
 import classes from "../../../styles/main pages/home page/welcome.module.scss";
 

@@ -1,5 +1,7 @@
 import aboutUsArticles from "../../../data information/aboutUsArticles";
+
 import classes from "../../../styles/main pages/about us/aboutUsSection.module.scss";
+
 const AboutUsSection = () => {
   return (
     <div style={{ paddingBottom: "3vw" }}>

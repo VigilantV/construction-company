@@ -1,9 +1,8 @@
-import NavbarItem_Desktop from "./NavbarItem_Desktop";
 import menuItems from "../../../data information/menuItems";
-
-import mainLogo from "../../../images/main_logo.svg";
+import NavbarItem_Desktop from "./NavbarItem_Desktop";
 
 import classes from "../../../styles/common/navbar_Desktop.module.scss";
+import mainLogo from "../../../images/main_logo.svg";
 
 const Navbar_Desktop = () => {
   return (

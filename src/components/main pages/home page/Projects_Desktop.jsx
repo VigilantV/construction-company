@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Card from "./Card";
 import companyProjects from "../../../data information/companyProjects";
+import Card from "./Card";
 
 import classes from "../../../styles/main pages/home page/projects.module.scss";
 import nextArrow from "../../../images/left-arrow.svg";

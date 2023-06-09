@@ -15,7 +15,7 @@ import directorProjects from "./data information/directorProjects";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <UseScrollToTop> */}
+      <UseScrollToTop>
         <DeviceProvider>
           <MenuItemsListProvider>
             <Routes>
@@ -110,7 +110,7 @@ const App = () => {
             </Routes>
           </MenuItemsListProvider>
         </DeviceProvider>
-      {/* </UseScrollToTop> */}
+      </UseScrollToTop>
     </BrowserRouter>
   );
 };

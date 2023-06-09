@@ -4,8 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import CertificateCard from "./CertificateCard";
 import certificates from "../../../data information/certificates";
+import CertificateCard from "./CertificateCard";
+
 import classes from "../../../styles/main pages/about us/certificates.module.scss";
 import nextArrow from "../../../images/left-arrow.svg";
 import prevArrow from "../../../images/right-arrow.svg";

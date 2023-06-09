@@ -1,5 +1,5 @@
-import NavbarItem_Mobile from "./NavbarItem_Mobile";
 import { useMenuItemsList } from "../use contexts/MenuItemsListContext";
+import NavbarItem_Mobile from "./NavbarItem_Mobile";
 
 import classes from "../../../styles/common/navbar_Mobile.module.scss";
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import ServicesDescription from "./ServicesDescription";
+
 import services from "../../../data information/services";
+import ServicesDescription from "./ServicesDescription";
 
 import classes from "../../../styles/main pages/home page/services_Desktop.module.scss";
 

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 
-import menuItems from "../../../data information/menuItems";
-import NavbarItem_Mobile from "./NavbarItem_Mobile";
 import { useMenuItemsList } from "../use contexts/MenuItemsListContext";
 import { useSetMenuItemsList } from "../use contexts/MenuItemsListContext";
+import menuItems from "../../../data information/menuItems";
+import NavbarItem_Mobile from "./NavbarItem_Mobile";
 
 import classes from "../../../styles/common/navbar_Mobile.module.scss";
 

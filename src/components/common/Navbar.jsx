@@ -1,6 +1,6 @@
 import { useDevice } from "./use contexts/DeviceContext";
-import Navbar_Desktop from "./desktop/Navbar_Desktop";
 import Navbar_Mobile from "./mobile/Navbar_Mobile";
+import Navbar_Desktop from "./desktop/Navbar_Desktop";
 
 const Navbar = () => {
   const isMobile = useDevice();
