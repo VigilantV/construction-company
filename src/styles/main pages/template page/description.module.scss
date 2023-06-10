@@ -1,21 +1,46 @@
 @use "../../global/variables" as *;
+@use "../../global/mixins" as *;
 
 .description_section {
-  width: 80vw;
   background-color: $darkGray;
+
+  @include devices(desktop) {
+    width: 80vw;
+  }
+
+  @include devices(mobile) {
+    width: 90vw;
+  }
 }
 
 .title {
-  margin: 1.5vw 0 0.8vw 3vw;
-  font-size: 1.8vw;
   text-transform: uppercase;
-  color: $lightGray;
+
+  @include devices(desktop) {
+    margin: 1.5vw 0 0.8vw 3vw;
+    font-size: 1.8vw;
+    color: $lightGray;
+  }
+
+  @include devices(mobile) {
+    margin: 3vh 0 2vh 3.5vw;
+    font-size: 4vw;
+    color: $lightRed;
+  }
 }
 
 .text {
-  margin: 1.5vw 0 0.8vw 3vw;
-  font-size: 1.2vw;
-  padding-right: 8vw;
-  text-align: justify;
   color: $smokyWhite;
+
+  @include devices(desktop) {
+    margin: 1.5vw 0 0.8vw 3vw;
+    font-size: 1.2vw;
+    padding-right: 8vw;
+    text-align: justify;
+  }
+
+  @include devices(mobile) {
+    margin: 0 0 4vh 7vw;
+    font-size: 2.2vw;
+  }
 }

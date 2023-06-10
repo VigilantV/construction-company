@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-import classes from "../../../styles/main pages/template page/verticalNavbar.module.scss";
+import classes from "../../../styles/main pages/template page/templateNavbar.module.scss";
 
-const VerticalNavbar = ({
+const TemplateNavbar = ({
   activeId,
   directoryName,
   dataDirectory,
@@ -11,7 +11,7 @@ const VerticalNavbar = ({
   const navigate = useNavigate();
 
   return (
-    <div className={classes.vertical_section}>
+    <div className={classes.navbar_section}>
       <h1 className={classes.title}>{directoryName}</h1>
       <div className={classes.options}>
         {dataDirectory.map((option) => (
@@ -32,4 +32,4 @@ const VerticalNavbar = ({
   );
 };
 
-export default VerticalNavbar;
+export default TemplateNavbar;
