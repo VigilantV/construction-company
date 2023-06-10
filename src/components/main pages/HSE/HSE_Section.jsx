@@ -10,22 +10,14 @@ const HSE_Section = () => {
       <h2 className={classes.title}>HSE</h2>
       {HSE_Articles.map((article) => (
         <div key={article.title} className={classes.article}>
-          <div className={classes.left_side}>{article.title}</div>
-          <div className={classes.right_side}>{article.content}</div>
+          <div className={classes.article_title}>{article.title}</div>
+          <div className={classes.article_text}>{article.content}</div>
         </div>
       ))}
 
       <div className={classes.img_wrapper}>
-        <img
-          className={classes.img}
-          src={certificate1}
-          alt="cetificate 1"
-        />
-        <img
-          className={classes.img}
-          src={certificate2}
-          alt="cetificate 2"
-        />
+        <img className={classes.img} src={certificate1} alt="cetificate 1" />
+        <img className={classes.img} src={certificate2} alt="cetificate 2" />
       </div>
     </div>
   );

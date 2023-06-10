@@ -1,48 +1,106 @@
 @use "../../global/variables" as *;
+@use "../../global/mixins" as *;
 
 .title {
-  margin-left: 10vw;
-  text-align: left;
-  font-size: 2.7vw;
-  color: white;
-  margin-top: 1vw;
+  color: $smokyWhite;
+
+  @include devices(desktop) {
+    text-align: left;
+    font-size: 2.7vw;
+    margin-left: 10vw;
+    margin-top: 1vw;
+  }
+
+  @include devices(mobile) {
+    text-align: center;
+    font-size: 5.5vw;
+    margin-top: 2vh;
+  }
 }
 
 .article {
   display: flex;
-  gap: 1vw;
-  margin: 3vw 5vw 3vw 0;
-  letter-spacing: 0.1vw;
+
+  @include devices(desktop) {
+    margin: 3vw 5vw 3vw 0;
+    letter-spacing: 0.1vw;
+  }
+
+  @include devices(mobile) {
+    flex-direction: column;
+    margin: 4vh 5vw 0 10vw;
+    letter-spacing: 0.2vw;
+  }
+
+  &_title {
+    text-transform: uppercase;
+
+    @include devices(desktop) {
+      width: 20vw;
+      margin-left: 10vw;
+      font-size: 1.5vw;
+      text-align: left;
+      color: $lightGray;
+    }
+
+    @include devices(mobile) {
+      width: 45vw;
+      font-size: 3.5vw;
+      margin-bottom: 1vh;
+      color: $lightRed;
+    }
+  }
+
+  &_text {
+    color: $smokyWhite;
+
+    @include devices(desktop) {
+      width: 80vw;
+      padding-left: 1vw;
+      font-size: 1.25vw;
+    }
+
+    @include devices(mobile) {
+      width: 90%;
+      font-size: 2.5vw;
+    }
+
+    ul {
+      @include devices(desktop) {
+        padding-left: 2vw;
+        margin: 1vw auto;
+      }
+
+      @include devices(mobile) {
+        padding-left: 2.5vw;
+      }
+    }
+  }
 }
 
 .img_wrapper {
   display: flex;
-  margin-left: 29.5vw;
-  margin-bottom: 4vw;
+
+  @include devices(desktop) {
+    margin-left: 29.5vw;
+    margin-bottom: 4vw;
+  }
+
+  @include devices(mobile) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+    margin: 4vh 0;
+  }
 }
 
 .img {
-  width: 20vw;
-  margin-right: 3vw;
-}
+  @include devices(desktop) {
+    height: 20vw;
+    margin-right: 3vw;
+  }
 
-.left_side {
-  width: 20vw;
-  margin-left: 10vw;
-  font-size: 1.5vw;
-  text-align: left;
-  text-transform: uppercase;
-  color: $lightGray;
-}
-
-.right_side {
-  width: 80vw;
-  padding-left: 1vw;
-  font-size: 1.25vw;
-  color: $smokyWhite;
-
-  ul {
-    padding-left: 2vw;
-    margin: 1vw auto;
+  @include devices(mobile) {
+    height: 50vh;
   }
 }
