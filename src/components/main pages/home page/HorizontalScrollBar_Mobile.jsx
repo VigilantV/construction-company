@@ -7,7 +7,7 @@ import classes from "../../../styles/main pages/home page/horizontalScrollBar_Mo
 const HorizontalScrollBar_Mobile = ({ list, baseURL }) => {
   const navigate = useNavigate();
 
-  const renderServices = () => {
+  const renderScrollBar = () => {
     return list.map((item) => (
       <Card
         key={item.id}
@@ -23,7 +23,7 @@ const HorizontalScrollBar_Mobile = ({ list, baseURL }) => {
   return (
     <>
       <h2 className={classes.title}>OUR SERVICES</h2>
-      <div className={classes.services_section}>{renderServices()}</div>
+      <div className={classes.scrollbar_section}>{renderScrollBar()}</div>
     </>
   );
 };

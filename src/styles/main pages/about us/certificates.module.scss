@@ -20,13 +20,20 @@
   }
 
   &_img {
-    width: 15.5vw;
-    margin: 1vw;
-    transition: 0.5s;
-    cursor: pointer;
+    @include devices(desktop) {
+      width: 15.5vw;
+      margin: 1vw;
+      transition: 0.5s;
+      cursor: pointer;
 
-    &:hover {
-      box-shadow: rgba(211, 76, 76, 0.8) 0 5px 15px;
+      &:hover {
+        box-shadow: rgba(211, 76, 76, 0.8) 0 5px 15px;
+      }
+    }
+
+    @include devices(mobile) {
+      height: 50vh;
+      padding-bottom: 2vh;
     }
   }
 }
@@ -37,42 +44,106 @@
 
 .card {
   position: fixed;
-  top: 6.5vw;
-  left: 34vw;
-  height: 37.5vw;
-  width: 32vw;
   display: flex;
   flex-direction: column;
-  border-radius: 0.7vw;
   z-index: 20;
   background-color: white;
+
+  @include devices(desktop) {
+    top: 6.5vw;
+    left: 34vw;
+    height: 37.5vw;
+    width: 32vw;
+    border-radius: 0.7vw;
+  }
+
+  @include devices(mobile) {
+    top: 12vh;
+    left: 10vw;
+    height: 68vh;
+    width: 80vw;
+    border-radius: 0.7vh;
+  }
 }
 
 .button {
-  width: 6vw;
-  height: 2.2vw;
-  font-size: 1vw;
   border: 0;
   @include buttonHover($smokyWhite, $lightRed, $lightRed, $darkGray);
+
+  @include devices(desktop) {
+    width: 6vw;
+    height: 2.2vw;
+    font-size: 1vw;
+  }
+
+  @include devices(mobile) {
+    width: 20vw;
+    height: 3.5vh;
+    font-size: 2.2vw;
+  }
 
   &_top {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1.2vw 6vw;
+
+    @include devices(desktop) {
+      margin: 1.2vw 6vw;
+    }
+
+    @include devices(mobile) {
+      margin: 1.5vh 6vw;
+    }
   }
 
   &_close {
     align-self: center;
-    margin-top: 1.2vw;
+
+    @include devices(desktop) {
+      margin-top: 1.2vw;
+    }
+
+    @include devices(mobile) {
+      margin-top: 1.5vh;
+    }
   }
 }
 
 .counter_text {
-  font-size: 1.2vw;
+  @include devices(desktop) {
+    font-size: 1.2vw;
+  }
+
+  @include devices(mobile) {
+    font-size: 3.5vw;
+  }
 }
 
 .modal_img {
-  height: 28vw;
-  margin: 0 1vw;
+  @include devices(desktop) {
+    height: 28vw;
+    margin: 0 1vw;
+  }
+
+  @include devices(mobile) {
+    height: 55vh;
+    margin: 0 1.5vw;
+  }
+}
+
+.title {
+  font-size: 5.5vw;
+  text-align: center;
+  margin-top: 5vh;
+  color: $smokyWhite;
+}
+
+.scrollbar_section {
+  display: flex;
+  margin: 2vh 5vw;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    height: 0.3vh;
+  }
 }
