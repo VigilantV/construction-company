@@ -14,7 +14,7 @@ import directorProjects from "./data information/directorProjects";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"/construction-company"}>
       <UseScrollToTop>
         <DeviceProvider>
           <MenuItemsListProvider>
