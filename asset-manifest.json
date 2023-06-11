@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/construction-company/static/css/main.6a2d85dd.css",
-    "main.js": "/construction-company/static/js/main.f38e233c.js",
+    "main.js": "/construction-company/static/js/main.924e8d18.js",
     "static/js/787.ab45f206.chunk.js": "/construction-company/static/js/787.ab45f206.chunk.js",
     "static/media/main_header.svg": "/construction-company/static/media/main_header.635bd1623d9dfdaedb6f.svg",
     "static/media/0.svg": "/construction-company/static/media/0.e4a8ce904d69b6e09af027527d9d5340.svg",
@@ -56,11 +56,11 @@
     "static/media/left-arrow.svg": "/construction-company/static/media/left-arrow.96fdd27edb5406226100062e307d9c8e.svg",
     "static/media/right-arrow.svg": "/construction-company/static/media/right-arrow.5477daa97025e245765e8366b77ffc6a.svg",
     "main.6a2d85dd.css.map": "/construction-company/static/css/main.6a2d85dd.css.map",
-    "main.f38e233c.js.map": "/construction-company/static/js/main.f38e233c.js.map",
+    "main.924e8d18.js.map": "/construction-company/static/js/main.924e8d18.js.map",
     "787.ab45f206.chunk.js.map": "/construction-company/static/js/787.ab45f206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a2d85dd.css",
-    "static/js/main.f38e233c.js"
+    "static/js/main.924e8d18.js"
   ]
 }
