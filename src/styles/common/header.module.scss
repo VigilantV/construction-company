@@ -69,17 +69,27 @@
   }
 }
 
-.links p {
-  display: inline-block;
-
-  @include devices(desktop) {
-    padding-bottom: 0.4vw;
-    font-size: 1.3vw;
-    @include linearHover();
+.links {
+  & > div {
+    display: flex;
+    margin-top: -1vw;
   }
 
-  @include devices(mobile) {
-    font-size: 3.8vw;
+  & > div > p {
+    margin-top: 1.8vw;
+    @include linearHover();
+
+    @include devices(desktop) {
+      font-size: 1.3vw;
+    }
+
+    @include devices(mobile) {
+      font-size: 3.8vw;
+    }
+  }
+
+  & > div > div {
+    @include copyPopUP();
   }
 }
 

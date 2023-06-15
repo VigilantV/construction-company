@@ -57,18 +57,29 @@
   }
 }
 
-.links p {
-  display: inline-block;
-
-  @include devices(desktop) {
-    font-size: 1.2vw;
-    padding-top: 0.4vw;
-    @include linearHover();
+.links {
+  & > div {
+    display: flex;
+    margin-top: -1.2vw;
   }
 
-  @include devices(mobile) {
-    font-size: 3vw;
-    padding-top: 1vh;
+  & > div > p {
+    margin-top: 1.8vw;
+    @include linearHover();
+
+    @include devices(desktop) {
+      font-size: 1.2vw;
+      padding-top: 0.4vw;
+    }
+
+    @include devices(mobile) {
+      font-size: 3vw;
+      padding-top: 1vh;
+    }
+  }
+
+  & > div > div {
+    @include copyPopUP();
   }
 }
 

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import info from "../../data information/companyInformations";
 import socialIcons from "../../data information/socialIcons";
@@ -7,8 +7,28 @@ import classes from "../../styles/common/footer.module.scss";
 import logo from "../../images/main_logo.svg";
 
 const Footer = () => {
+  const [isPhoneNumberCopied, setIsPhoneNumberCopied] = useState(false);
+  const [isEmailCopied, setIsEmailCopied] = useState(false);
+
   const emailValueRef = useRef("");
   const textAreaRef = useRef("");
+
+  useEffect(() => {
+    if (isPhoneNumberCopied)
+      setTimeout(() => {
+        setIsPhoneNumberCopied(false);
+      }, 1500);
+
+    if (isEmailCopied)
+      setTimeout(() => {
+        setIsEmailCopied(false);
+      }, 1500);
+  }, [isPhoneNumberCopied, isEmailCopied]);
+
+  const copyToClipboard = (text, setIsCopied) => {
+    navigator.clipboard.writeText(text);
+    setIsCopied(true);
+  };
 
   const companyInfo = (
     <>
@@ -16,9 +36,32 @@ const Footer = () => {
       <p className={classes.address}>{info.address}</p>
       <p className={classes.address}>{info.PO_Box}</p>
       <div className={classes.links}>
-        <p>{info.number}</p>
-        <br />
-        <p>{info.email}</p>
+        <div>
+          <p
+            onClick={() => {
+              copyToClipboard(info.number, setIsPhoneNumberCopied);
+            }}
+          >
+            {info.number}
+          </p>
+          <div style={{ opacity: isPhoneNumberCopied ? "1" : "0" }}>copied</div>
+        </div>
+        <div>
+          <p
+            onClick={() => {
+              copyToClipboard(info.email, setIsEmailCopied);
+            }}
+          >
+            {info.email}
+          </p>
+          <div
+            style={{
+              opacity: isEmailCopied ? "1" : "0",
+            }}
+          >
+            copied
+          </div>
+        </div>
       </div>
     </>
   );
