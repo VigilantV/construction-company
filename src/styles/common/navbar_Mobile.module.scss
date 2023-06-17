@@ -124,9 +124,15 @@
   @include linearHover();
 }
 
-.arrow_open {
+.back_arrow_open {
   width: 7vw;
   transform: rotate(-540deg);
+  transition: transform 0.5s;
+}
+
+.arrow_open {
+  width: 7vw;
+  transform: rotate(540deg);
   transition: transform 0.5s;
 }
 

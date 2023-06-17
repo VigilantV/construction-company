@@ -31,7 +31,7 @@ const NavbarSubList_Mobile = ({
           className={`${
             showItemsList(title.toLowerCase()).value
               ? classes.arrow_close
-              : classes.arrow_open
+              : classes.back_arrow_open
           }`}
           src={backArrow}
         />
