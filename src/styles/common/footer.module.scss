@@ -30,7 +30,7 @@
   }
 
   @include devices(mobile) {
-    width: 20vw;
+    width: 22vw;
     margin-right: 3vw;
   }
 }
@@ -41,7 +41,7 @@
   }
 
   @include devices(mobile) {
-    font-size: 5.5vw;
+    font-size: 5.8vw;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   @include devices(mobile) {
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding-top: 1vh;
   }
 }
@@ -60,25 +60,30 @@
 .links {
   & > div {
     display: flex;
-    column-gap: 1vw;
     margin-top: -1vw;
+
+    @include devices(desktop) {
+      column-gap: 0.5vw;
+    }
 
     @include devices(mobile) {
       justify-content: center;
+      column-gap: 1vw;
       margin-left: 13vw;
     }
   }
 
   & > div > p {
-    margin-top: 1.8vw;
+    margin-top: 2vw;
 
     @include devices(desktop) {
       font-size: 1.2vw;
+      padding-top: 0.5vw;
       @include linearHover();
     }
 
     @include devices(mobile) {
-      font-size: 3vw;
+      font-size: 3.8vw;
       padding-top: 1.5vh;
     }
   }
@@ -114,7 +119,7 @@
   }
 
   @include devices(mobile) {
-    width: 8.5vw;
+    width: 9vw;
   }
 }
 
@@ -150,7 +155,6 @@
 
 .input_elements {
   border: 1px solid $lightGray;
-  border-radius: 0.5vw;
   background-color: transparent;
   color: $smokyWhite;
 
@@ -158,12 +162,14 @@
     width: 27vw;
     font-size: 1.2vw;
     padding: 0.8vw;
+    border-radius: 0.5vw;
   }
 
   @include devices(mobile) {
-    width: 60vw;
-    font-size: 3vw;
+    width: 66vw;
+    font-size: 3.5vw;
     padding: 1.5vh 2vw;
+    border-radius: 0.5vh;
   }
 
   &::placeholder {
@@ -174,7 +180,7 @@
     }
 
     @include devices(mobile) {
-      font-size: 3vw;
+      font-size: 3.5vw;
     }
   }
 
@@ -207,9 +213,9 @@ textarea.input_elements {
 
   @include devices(mobile) {
     width: 23vw;
-    font-size: 3vw;
+    font-size: 3.2vw;
+    font-weight: normal;
     padding: 1.1vh 0.5vw;
-    border-radius: 1.5vw;
     border-radius: 1vh;
     letter-spacing: 1px;
     text-transform: uppercase;

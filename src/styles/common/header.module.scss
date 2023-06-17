@@ -10,26 +10,20 @@
     height: 47vw;
   }
 
-  @include devices(mobile) {
-    height: 48vh;
-  }
-
   &_text {
-    position: absolute;
-    z-index: 10;
     color: $smokyWhite;
 
     @include devices(desktop) {
+      position: absolute;
       top: 18vw;
       left: 4vw;
+      z-index: 10;
     }
 
     @include devices(mobile) {
-      top: 0;
-      height: 48vh;
       width: 100vw;
       text-align: center;
-      padding-top: 12vh;
+      padding: 12vh 0 5vh;
       background-color: #000000c0;
     }
   }
@@ -41,7 +35,7 @@
   }
 
   @include devices(mobile) {
-    font-size: 8.7vw;
+    font-size: 9vw;
   }
 }
 
@@ -52,7 +46,7 @@
   }
 
   @include devices(mobile) {
-    font-size: 6.5vw;
+    font-size: 7vw;
     margin: 1vh 0 3vh;
   }
 }
@@ -64,7 +58,7 @@
   }
 
   @include devices(mobile) {
-    font-size: 3.8vw;
+    font-size: 4vw;
     margin-bottom: 1vh;
   }
 }
@@ -91,7 +85,7 @@
     }
 
     @include devices(mobile) {
-      font-size: 3.8vw;
+      font-size: 4vw;
       padding-top: 1.5vh;
     }
   }

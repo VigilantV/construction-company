@@ -63,14 +63,14 @@
 
   @include devices(desktop) {
     width: 5.5vw;
-    height: 3.4vw;
+    height: 3.5vw;
     padding-top: 1vw;
     font-size: 1.2vw;
   }
 
   @include devices(mobile) {
     width: 13vw;
-    height: 4vh;
+    height: 4.5vh;
     padding-top: 1vh;
     font-size: 3vw;
   }
@@ -90,8 +90,8 @@
     }
 
     @include devices(mobile) {
-      top: 3.2vh;
-      right: 8.5vw;
+      top: 3.7vh;
+      right: 8.6vw;
       width: 2.5vw;
       height: 0.8vh;
     }

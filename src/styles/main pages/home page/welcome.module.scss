@@ -7,7 +7,7 @@
   }
 
   @include devices(mobile) {
-    padding: 2vh 14vw;
+    padding: 2vh 13vw;
   }
 }
 
@@ -51,8 +51,8 @@
   }
 
   @include devices(mobile) {
-    height: 22vh;
-    padding: 1.2vh;
+    height: 23vh;
+    padding: 1.3vh;
     border-radius: 0.7vh;
   }
 
@@ -84,7 +84,7 @@
     }
 
     @include devices(mobile) {
-      font-size: 4vw;
+      font-size: 4.5vw;
     }
   }
 
@@ -98,7 +98,7 @@
     }
 
     @include devices(mobile) {
-      font-size: 2.5vw;
+      font-size: 3.2vw;
       line-height: 2.2vh;
       margin-top: 1.2vh;
     }
