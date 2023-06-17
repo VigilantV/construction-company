@@ -54,26 +54,46 @@
 
 @mixin copyPopUP() {
   position: relative;
-  align-self: start;
-  width: 5.5vw;
   border-radius: 50%;
-  padding: 0.8vw 0;
   text-align: center;
   color: $lightRed;
-  -webkit-text-fill-color: $lightRed;
   background-color: $smokyWhite;
   opacity: 1;
   transition: 0.2s;
 
+  @include devices(desktop) {
+    width: 5.5vw;
+    height: 3.4vw;
+    padding-top: 1vw;
+    font-size: 1.2vw;
+  }
+
+  @include devices(mobile) {
+    width: 13vw;
+    height: 4vh;
+    padding-top: 1vh;
+    font-size: 3vw;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    top: 2.1vw;
-    right: 4.1vw;
     display: block;
-    width: 1vw;
-    height: 0.6vw;
     background-color: $smokyWhite;
     transform: rotate(-10deg);
+
+    @include devices(desktop) {
+      top: 2.6vw;
+      right: 3.9vw;
+      width: 1.1vw;
+      height: 0.6vw;
+    }
+
+    @include devices(mobile) {
+      top: 3.2vh;
+      right: 8.5vw;
+      width: 2.5vw;
+      height: 0.8vh;
+    }
   }
 }

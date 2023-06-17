@@ -60,21 +60,26 @@
 .links {
   & > div {
     display: flex;
-    margin-top: -1.2vw;
+    column-gap: 1vw;
+    margin-top: -1vw;
+
+    @include devices(mobile) {
+      justify-content: center;
+      margin-left: 13vw;
+    }
   }
 
   & > div > p {
     margin-top: 1.8vw;
-    @include linearHover();
 
     @include devices(desktop) {
       font-size: 1.2vw;
-      padding-top: 0.4vw;
+      @include linearHover();
     }
 
     @include devices(mobile) {
       font-size: 3vw;
-      padding-top: 1vh;
+      padding-top: 1.5vh;
     }
   }
 
