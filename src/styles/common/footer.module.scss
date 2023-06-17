@@ -198,18 +198,22 @@ textarea.input_elements {
 }
 
 .btn {
-  @include buttonHover($darkGray, $lightRed, $lightRed, $darkGray);
-
   @include devices(desktop) {
     width: 8vw;
     font-size: 1.2vw;
     padding: 0.5vw;
+    @include buttonHover($darkGray, $lightRed, $lightRed, $darkGray);
   }
 
   @include devices(mobile) {
-    width: 20vw;
+    width: 23vw;
     font-size: 3vw;
-    padding: 1vh 0.5vw;
+    padding: 1.1vh 0.5vw;
     border-radius: 1.5vw;
+    border-radius: 1vh;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $darkGray;
+    background-color: $lightRed;
   }
 }

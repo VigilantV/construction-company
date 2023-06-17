@@ -6,6 +6,7 @@ import { useSetMenuItemsList } from "../use contexts/MenuItemsListContext";
 import NavbarSubList_Mobile from "./NavbarSubList_Mobile";
 
 import classes from "../../../styles/common/navbar_Mobile.module.scss";
+import forwardArrow from "../../../images/navbar/forward_arrow.png";
 
 const NavbarItem_Mobile = ({
   item,
@@ -41,15 +42,14 @@ const NavbarItem_Mobile = ({
             }}
           >
             <p>{item.title}</p>
-            <p
+            <img
               className={`${
                 showItemsList(item.title.toLowerCase()).value
                   ? classes.arrow_open
                   : classes.arrow_close
               }`}
-            >
-              &#11166;
-            </p>
+              src={forwardArrow}
+            />
           </div>
           {createPortal(
             <NavbarSubList_Mobile

@@ -2,6 +2,7 @@ import { useMenuItemsList } from "../use contexts/MenuItemsListContext";
 import NavbarItem_Mobile from "./NavbarItem_Mobile";
 
 import classes from "../../../styles/common/navbar_Mobile.module.scss";
+import backArrow from "../../../images/navbar/back_arrow.png";
 
 const NavbarSubList_Mobile = ({
   title,
@@ -26,15 +27,14 @@ const NavbarSubList_Mobile = ({
           setShowParentList(1);
         }}
       >
-        <p
+        <img
           className={`${
             showItemsList(title.toLowerCase()).value
-              ? classes.arrow_open
-              : classes.arrow_close
+              ? classes.arrow_close
+              : classes.arrow_open
           }`}
-        >
-          &#11166;
-        </p>
+          src={backArrow}
+        />
         <p>BACK</p>
       </div>
       {menu.map((item, index) => {

@@ -73,9 +73,13 @@ const Footer = () => {
         <div>{companyInfo}</div>
         <div className={classes.link_icons}>
           {socialIcons.map((icon) => (
-            <a key={icon.id} href={icon.link}>
-              <img className={classes.icon} src={icon.src} alt={icon.alt} />
-            </a>
+            <img
+              key={icon.id}
+              className={classes.icon}
+              src={icon.src}
+              alt={icon.alt}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            />
           ))}
         </div>
       </div>

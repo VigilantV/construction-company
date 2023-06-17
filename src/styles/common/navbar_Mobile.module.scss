@@ -125,11 +125,13 @@
 }
 
 .arrow_open {
+  width: 7vw;
   transform: rotate(-540deg);
   transition: transform 0.5s;
 }
 
 .arrow_close {
+  width: 7vw;
   transform: rotate(0deg);
   transition: transform 0.5s;
 }

@@ -77,11 +77,13 @@
 }
 
 .arrow_open {
+  width: 1.8vw;
   transform: rotate(-540deg);
   transition: transform 1s;
 }
 
 .arrow_close {
+  width: 1.8vw;
   transform: rotate(0deg);
   transition: transform 1s;
 }
