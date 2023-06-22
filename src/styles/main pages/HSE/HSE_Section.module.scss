@@ -13,7 +13,7 @@
 
   @include devices(mobile) {
     text-align: center;
-    font-size: 5.5vw;
+    font-size: 6vw;
     margin-top: 2vh;
   }
 }
@@ -44,8 +44,8 @@
     }
 
     @include devices(mobile) {
-      width: 45vw;
-      font-size: 3.5vw;
+      width: 50vw;
+      font-size: 4.5vw;
       margin-bottom: 1vh;
       color: $lightRed;
     }
@@ -62,7 +62,8 @@
 
     @include devices(mobile) {
       width: 90%;
-      font-size: 2.5vw;
+      font-size: 3.5vw;
+      line-height: 2.7vh;
     }
 
     ul {

@@ -67,22 +67,15 @@ const services = [
           quickly and smoothly and prevent faults. Moreover design and
           engineering is a basic activity in all projects and a professional
           design/Engineering with a good quality will affect to the execution
-          works and creates a high quality work/project. Based on mentioned
-          points, HINASIAH has arranged an active and effective designing
-          section as one of goals and has tried to improve the quality of this
-          section. In the Resume of HINASIAH Designing section there are many
-          projects in various field mentioned in the below, that have been
-          designed in all disciplines including civil, structure, architectural,
-          mechanical and electrical:
+          works and creates a high quality work/project.In the Resume of
+          HINASIAH Designing section there are many projects in various field
+          mentioned in the below, that have been designed in all disciplines
+          including civil, structure, architectural, mechanical and electrical:
         </p>
 
         <ul style={{ padding: "1vw 0 1vw 0.8vw" }}>
           <li>Design of buildings and landscaping of residential projects.</li>
           <li> Design of buildings and landscaping of commercial projects. </li>
-          <li>
-            Design of buildings and landscaping of administrative projects.
-          </li>
-          <li>Design of buildings and landscaping of educational projects.</li>
           <li> Design of buildings and landscaping of cultural projects. </li>
           <li> Design of buildings and landscaping of sportive projects. </li>
           <li>
@@ -115,28 +108,12 @@ const services = [
           this section should be reviewed and approved by the client. 2-
           Conceptual design: The purpose of this section is to turn the idea
           into a plan, as well as to insert the main process and functions of
-          the major components of the project. 3- Preliminary design: Carrying
-          out basic engineering studies and preparing the first stage drawings,
-          specifying the quantity and quality of needed spaces. In the end of
-          this section, report of studies and first stage architectural drawings
-          album (site and buildings), also estimated bill of quantity and a
-          preliminary estimated project total cost (with accuracy of %85) will
-          be prepared and submitted to the client in order to get a decision by
-          the client. Although production process document should be approved by
-          the general directorate for drug affairs before submitting it to the
-          consultant. 4- Detail Design: Calculation and providing of detailed
-          drawings, general and specific specification, bill of quantity and
-          project final cost estimation as documents for
-          tender/procurement/contractor selection will be submitted to the
-          client. 5- Consulting services (GMP) and Qualification: Actually this
-          part is coordination between Drug production process with GMP
-          requirements and favorable with technical assistant and
-          standardization method (SOP), also qualification of machinery and
-          equipment according to the last international standards, coordinated
-          with technical office and supervision of drug affair organization. To
-          more clarification about Preliminary Design (PHASE 1) and Detail
-          Design (PHASE 2), novak Co. has provided two flow Diagram that
-          describes the activity procedure.
+          the major components of the project. Although production process
+          document should be approved by the general directorate for drug
+          affairs before submitting it to the consultant. To more clarification
+          about Preliminary Design (PHASE 1) and Detail Design (PHASE 2), novak
+          Co. has provided two flow Diagram that describes the activity
+          procedure.
         </p>
       </>
     ),

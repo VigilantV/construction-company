@@ -77,9 +77,9 @@
   }
 
   @include devices(mobile) {
-    width: 20vw;
-    height: 3.5vh;
-    font-size: 2.2vw;
+    width: 21vw;
+    height: 3.8vh;
+    font-size: 3vw;
     border-radius: 0.5vh;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -120,7 +120,7 @@
   }
 
   @include devices(mobile) {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 }
 
@@ -137,7 +137,7 @@
 }
 
 .title {
-  font-size: 5.5vw;
+  font-size: 6vw;
   text-align: center;
   margin-top: 5vh;
   color: $smokyWhite;

@@ -24,7 +24,7 @@ const TemplateNavbar = ({
             }`}
             onClick={() => navigate(`${parentLink}/${option.link}`)}
           >
-            <h2> {option.title} </h2>
+            <h2>{option.title}</h2>
           </div>
         ))}
       </div>

@@ -21,7 +21,7 @@
 
   @include devices(mobile) {
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 5vw;
     padding: 3vh 0 2vh;
   }
 }
@@ -51,6 +51,9 @@
   }
 
   @include devices(mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 45vw;
     border-radius: 0.7vh;
     border: solid 0.2vw $lightRed;

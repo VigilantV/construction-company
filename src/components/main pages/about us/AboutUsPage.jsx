@@ -8,9 +8,18 @@ const AboutUsPage = () => {
   const isMobile = useDevice();
 
   const headerText = isMobile ? (
-    <h2 style={{ fontSize: "4vw", lineHeight: "4vh", marginTop: "15vh" }}>
-      20 Years Of Experiment In The Engineering
-      <br /> And Construction
+    <h2
+      style={{
+        fontSize: "4.7vw",
+        lineHeight: "4vh",
+        marginTop: "12vh",
+        marginBottom: "5vh",
+      }}
+    >
+      20 Years Of <br />
+      Experiment In The
+      <br />
+      Engineering And Construction
       <br /> <br /> From Imagination To Reality.
     </h2>
   ) : (
