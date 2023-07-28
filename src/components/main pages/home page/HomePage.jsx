@@ -18,12 +18,17 @@ const HomePage = () => {
       <Header />
       <Welcome />
       {isMobile ? (
-        <HorizontalScrollBar_Mobile list={services} baseURL="/services" />
+        <HorizontalScrollBar_Mobile
+          title="OUR SERVICES"
+          list={services}
+          baseURL="/services"
+        />
       ) : (
         <Services_Desktop />
       )}
       {isMobile ? (
         <HorizontalScrollBar_Mobile
+        title="LATEST PROJECTS"
           list={companyProjects}
           baseURL="/projects/company_projects"
         />

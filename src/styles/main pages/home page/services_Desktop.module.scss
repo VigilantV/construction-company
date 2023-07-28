@@ -45,6 +45,7 @@
 .detail_container {
   overflow-y: scroll;
   transition: height 0.4s;
+  scrollbar-width: none;
 
   &::-webkit-scrollbar {
     width: 0.2vw;

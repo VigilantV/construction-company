@@ -73,7 +73,7 @@ const Certificates = () => {
     <>
       {isMobile ? (
         <>
-          <h2 className={classes.title}>OUR SERVICES</h2>
+          <h2 className={classes.title}>OUR CERTIFICATES</h2>
           <div className={classes.scrollbar_section}>{renderImages()}</div>
         </>
       ) : (

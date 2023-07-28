@@ -43,6 +43,7 @@
 .intro {
   background-color: $gray;
   overflow-y: scroll;
+  scrollbar-width: none;
 
   @include devices(desktop) {
     height: 33vw;

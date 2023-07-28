@@ -34,6 +34,7 @@
   flex-direction: column;
   background-color: $lightRed;
   overflow-y: scroll;
+  scrollbar-width: none;
 
   @include devices(desktop) {
     height: 11vw;

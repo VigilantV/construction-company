@@ -4,7 +4,7 @@ import Card from "./Card";
 
 import classes from "../../../styles/main pages/home page/horizontalScrollBar_Mobile.module.scss";
 
-const HorizontalScrollBar_Mobile = ({ list, baseURL }) => {
+const HorizontalScrollBar_Mobile = ({ title, list, baseURL }) => {
   const navigate = useNavigate();
 
   const renderScrollBar = () => {
@@ -22,7 +22,7 @@ const HorizontalScrollBar_Mobile = ({ list, baseURL }) => {
 
   return (
     <>
-      <h2 className={classes.title}>OUR SERVICES</h2>
+      <h2 className={classes.title}>{title}</h2>
       <div className={classes.scrollbar_section}>{renderScrollBar()}</div>
     </>
   );

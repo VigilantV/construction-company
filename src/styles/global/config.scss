@@ -17,6 +17,11 @@
   font-family: lexend;
 }
 
+html {
+  scrollbar-color: $lightRed $darkGray;
+  scrollbar-width: thin;
+}
+
 body {
   overflow-y: var(--scroll);
   overflow-x: hidden;
