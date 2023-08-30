@@ -10,9 +10,6 @@ import img_9 from "../images/certificates/9.jpg";
 import img_10 from "../images/certificates/10.jpg";
 import img_11 from "../images/certificates/11.jpg";
 import img_12 from "../images/certificates/12.jpg";
-import img_13 from "../images/certificates/13.jpg";
-import img_14 from "../images/certificates/14.jpg";
-import img_15 from "../images/certificates/15.jpg";
 
 const certificates = [
   {
@@ -62,18 +59,6 @@ const certificates = [
   {
     id: 11,
     img: img_12,
-  },
-  {
-    id: 12,
-    img: img_13,
-  },
-  {
-    id: 13,
-    img: img_14,
-  },
-  {
-    id: 14,
-    img: img_15,
   },
 ];
 
