@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
+import sendEmail from "./sendEmail";
 import info from "../../data information/companyInformations";
 import socialIcons from "../../data information/socialIcons";
 
@@ -7,11 +8,10 @@ import classes from "../../styles/common/footer.module.scss";
 import logo from "../../images/main_logo.svg";
 
 const Footer = () => {
+  const formRef = useRef();
+
   const [isPhoneNumberCopied, setIsPhoneNumberCopied] = useState(false);
   const [isEmailCopied, setIsEmailCopied] = useState(false);
-
-  const emailValueRef = useRef("");
-  const textAreaRef = useRef("");
 
   useEffect(() => {
     if (isPhoneNumberCopied)
@@ -86,21 +86,20 @@ const Footer = () => {
       <div>
         <h1 className={classes.input_title}>Get In Touch</h1>
         <form
+          ref={formRef}
           className={classes.form}
           onSubmit={(e) => {
-            e.preventDefault();
-            emailValueRef.current.value = "";
-            textAreaRef.current.value = "";
+            sendEmail(e, formRef);
           }}
         >
           <input
-            ref={emailValueRef}
+            name="from_email"
             className={classes.input_elements}
             type="email"
             placeholder="Email"
           />
           <textarea
-            ref={textAreaRef}
+            name="message"
             className={classes.input_elements}
             placeholder="Message"
           />
