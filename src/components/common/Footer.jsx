@@ -38,8 +38,15 @@ const Footer = () => {
       <div className={classes.links}>
         <div>
           <p
+            role="button"
+            tabIndex={0}
             onClick={() => {
               copyToClipboard(info.number, setIsPhoneNumberCopied);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                copyToClipboard(info.number, setIsPhoneNumberCopied);
+              }
             }}
           >
             {info.number}
@@ -48,8 +55,15 @@ const Footer = () => {
         </div>
         <div>
           <p
+            role="button"
+            tabIndex={0}
             onClick={() => {
               copyToClipboard(info.email, setIsEmailCopied);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                copyToClipboard(info.email, setIsEmailCopied);
+              }
             }}
           >
             {info.email}

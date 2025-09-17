@@ -13,7 +13,7 @@ import nextArrow from "../../../images/left-arrow.svg";
 import prevArrow from "../../../images/right-arrow.svg";
 
 const Certificates = () => {
-  const portalElement = document.getElementById("modal");
+  const portalElement = document?.getElementById("modal");
 
   const isMobile = useDevice();
 
@@ -106,11 +106,13 @@ const Certificates = () => {
         </div>
       )}
       {certificateIsShown &&
+        portalElement &&
         createPortal(
           <Backdrop onHideCertificate={hideCertificate}></Backdrop>,
           portalElement
         )}
       {certificateIsShown &&
+        portalElement &&
         createPortal(
           <CertificateCard
             currentImageIndex={currentImageIndex}

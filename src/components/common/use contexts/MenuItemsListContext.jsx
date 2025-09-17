@@ -21,21 +21,12 @@ export const MenuItemsListProvider = ({ children }) => {
   ]);
 
   const chosenList = (param = "") => {
-    let tempList = { key: "", value: 0 };
     if (param === "") {
-      for (let list of showList) {
-        {
-          if (list.value === 1) {
-            tempList = list;
-            break;
-          }
-        }
-      }
-    } else
-      showList.filter((list) => {
-        if (list.key === param) tempList = list;
-      });
-    return tempList;
+      const active = showList.find((list) => list.value === 1);
+      return active || { key: "", value: 0 };
+    }
+    const match = showList.find((list) => list.key === param);
+    return match || { key: "", value: 0 };
   };
 
   return (

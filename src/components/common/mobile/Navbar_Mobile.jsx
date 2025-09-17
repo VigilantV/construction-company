@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { useMenuItemsList } from "../use contexts/MenuItemsListContext";
@@ -9,16 +9,18 @@ import NavbarItem_Mobile from "./NavbarItem_Mobile";
 import classes from "../../../styles/common/navbar_Mobile.module.scss";
 
 const Navbar_Mobile = () => {
-  const portalElement = document.getElementById("mobile_navbar");
+  const portalElement = document?.getElementById("mobile_navbar");
 
   const showItemsList = useMenuItemsList();
   const setShowItemsList = useSetMenuItemsList();
 
   const [showMenu, setShowMenu] = useState(showItemsList().value);
 
-  showMenu
-    ? document.querySelector(":root").style.setProperty("--scroll", "hidden")
-    : document.querySelector(":root").style.setProperty("--scroll", "scroll");
+  useEffect(() => {
+    const root = document.querySelector(":root");
+    if (!root) return;
+    root.style.setProperty("--scroll", showMenu ? "hidden" : "scroll");
+  }, [showMenu]);
 
   const clickHandler = (value) => {
     setShowItemsList((prevValue) =>
@@ -31,10 +33,7 @@ const Navbar_Mobile = () => {
   const resetAllListsDisplay = () => {
     setShowMenu(0);
     setShowItemsList((prevValue) =>
-      prevValue.map((item) => {
-        item.value = 0;
-        return item;
-      })
+      prevValue.map((item) => ({ ...item, value: 0 }))
     );
   };
 
@@ -46,8 +45,8 @@ const Navbar_Mobile = () => {
           type="checkbox"
           checked={showMenu}
           className={classes.menu_toggler}
-          onChange={() => {
-            if (document.getElementById("menu_button").checked) {
+          onChange={(e) => {
+            if (e.target.checked) {
               setShowMenu(1);
               clickHandler(1);
             } else {
@@ -59,33 +58,35 @@ const Navbar_Mobile = () => {
           <div></div>
         </div>
       </div>
-      {createPortal(
-        <div
-          style={{ transform: `scale(${showMenu})` }}
-          className={classes.backdrop}
-        ></div>,
-        portalElement
-      )}
-      {createPortal(
-        <div
-          style={{
-            transform: `scale(${showItemsList("menu items").value})`,
-          }}
-          className={classes.menu}
-        >
-          {menuItems.map((item, index) => {
-            return (
-              <NavbarItem_Mobile
-                key={index}
-                item={item}
-                setShowParentList={clickHandler}
-                resetAllListsDisplay={resetAllListsDisplay}
-              />
-            );
-          })}
-        </div>,
-        portalElement
-      )}
+      {portalElement &&
+        createPortal(
+          <div
+            style={{ transform: `scale(${showMenu})` }}
+            className={classes.backdrop}
+          ></div>,
+          portalElement
+        )}
+      {portalElement &&
+        createPortal(
+          <div
+            style={{
+              transform: `scale(${showItemsList("menu items").value})`,
+            }}
+            className={classes.menu}
+          >
+            {menuItems.map((item, index) => {
+              return (
+                <NavbarItem_Mobile
+                  key={index}
+                  item={item}
+                  setShowParentList={clickHandler}
+                  resetAllListsDisplay={resetAllListsDisplay}
+                />
+              );
+            })}
+          </div>,
+          portalElement
+        )}
     </>
   );
 };

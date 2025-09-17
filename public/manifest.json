@@ -1,13 +1,15 @@
 {
-  "short_name": "construction-ompany",
+  "short_name": "Construction",
   "name": "construction-company",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "32x32",
+      "sizes": "32x32 48x48 64x64",
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
-  "display": "standalone"
+  "start_url": "/construction-company/",
+  "display": "standalone",
+  "background_color": "#252525",
+  "theme_color": "#252525"
 }

@@ -24,12 +24,10 @@ const App = () => {
             <MenuItemsListProvider>
               <Routes>
                 <Route
-                  exact
                   path="/home"
                   element={<AnimatedNavbarInterface children={<HomePage />} />}
                 />
                 <Route
-                  exact
                   path="/about_us"
                   element={
                     <AnimatedNavbarInterface children={<AboutUsPage />} />
@@ -107,7 +105,6 @@ const App = () => {
                 </Route>
 
                 <Route
-                  exact
                   path="/HSE"
                   element={<AnimatedNavbarInterface children={<HSE_Page />} />}
                 />
