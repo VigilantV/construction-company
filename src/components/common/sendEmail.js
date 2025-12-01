@@ -5,10 +5,10 @@ const sendEmail = (e, formRef) => {
   e.preventDefault();
   emailjs
     .sendForm(
-      "service_jefyk0n",
-      "template_hqi20ed",
+      "service_cu34nko",
+      "template_ntta59a",
       formRef.current,
-      "M1d0aRz-HT-TNxpSC"
+      "mun2Y_GUgMsZ0vy8s"
     )
     .then(
       () => {
